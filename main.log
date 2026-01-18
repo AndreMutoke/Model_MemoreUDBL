@@ -1,0 +1,2385 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.2)  18 JAN 2026 07:22
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./main.tex
+(main.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-06-09>
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@chapter=\count276
+\c@section=\count277
+\c@subsection=\count278
+\c@subsubsection=\count279
+\c@paragraph=\count280
+\c@subparagraph=\count281
+\c@figure=\count282
+\c@table=\count283
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr
+.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip51
+\f@nch@offset@elh=\skip52
+\f@nch@offset@erh=\skip53
+\f@nch@offset@olh=\skip54
+\f@nch@offset@orh=\skip55
+\f@nch@offset@elf=\skip56
+\f@nch@offset@erf=\skip57
+\f@nch@offset@olf=\skip58
+\f@nch@offset@orf=\skip59
+\f@nch@height=\skip60
+\f@nch@footalignment=\skip61
+\f@nch@widthL=\skip62
+\f@nch@widthC=\skip63
+\f@nch@widthR=\skip64
+\@temptokenb=\toks17
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
+) (C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/05/14 v25.9 The multilingual framework for pdfLaTeX, LuaLaT
+eX and XeLaTeX
+\babel@savecnt=\count284
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2043.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2045.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2047.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2048.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2049.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2051.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2076.
+\U@D=\dimen149
+\l@unhyphenated=\language79
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.
+def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count285
+
+*************************************
+* Local config file bblopts.cfg used
+*
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\fr
+ench.ldf
+Language: french 2024-07-25 v3.6c French support from the babel system
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/fr
+\babel-french.tex
+Package babel Info: Importing font and identification data for french
+(babel)             from babel-fr.ini. Reported on input line 11.
+)
+Package babel Info: Hyphen rules for 'acadian' set to \l@french
+(babel)             (\language22). Reported on input line 91.
+Package babel Info: Hyphen rules for 'canadien' set to \l@french
+(babel)             (\language22). Reported on input line 92.
+\FB@stdchar=\count286
+Package babel Info: Making : an active character on input line 421.
+Package babel Info: Making ; an active character on input line 422.
+Package babel Info: Making ! an active character on input line 423.
+Package babel Info: Making ? an active character on input line 424.
+\FBguill@level=\count287
+\FBold@everypar=\toks18
+\FB@Mht=\dimen150
+\mc@charclass=\count288
+\mc@charfam=\count289
+\mc@charslot=\count290
+\std@mcc=\count291
+\dec@mcc=\count292
+\FB@parskip=\dimen151
+\listindentFB=\dimen152
+\descindentFB=\dimen153
+\labelindentFB=\dimen154
+\labelwidthFB=\dimen155
+\leftmarginFB=\dimen156
+\parindentFFN=\dimen157
+\FBfnindent=\dimen158
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\eng
+lish.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en
+\babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+)
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 108.
+))
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt
+.sty)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-perpage
+.sty
+Package: zref-perpage 2025-06-08 v2.36 Module perpage for zref (HO)
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-base.st
+y
+Package: zref-base 2025-06-08 v2.36 Module base for zref (HO)
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds
+.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwa
+rerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetke
+ys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kv
+definekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdft
+excmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcm
+ds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.s
+ty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-abspage
+.sty
+Package: zref-abspage 2025-06-08 v2.36 Module abspage for zref (HO)
+\c@abspage=\count293
+Package zref Info: New property: abspage on input line 67.
+)
+Package zref Info: New property: pagevalue on input line 57.
+Package zref Info: New property list: perpage on input line 58.
+\c@zpage=\count294
+\c@zref@unique=\count295
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx
+.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.s
+ty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics
+.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\grap
+hics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdft
+ex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen159
+\Gin@req@width=\dimen160
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e
+.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip65
+\RaggedLeftLeftskip=\skip66
+\RaggedRightLeftskip=\skip67
+\CenteringRightskip=\skip68
+\RaggedLeftRightskip=\skip69
+\RaggedRightRightskip=\skip70
+\CenteringParfillskip=\skip71
+\RaggedLeftParfillskip=\skip72
+\RaggedRightParfillskip=\skip73
+\JustifyingParfillskip=\skip74
+\CenteringParindent=\skip75
+\RaggedLeftParindent=\skip76
+\RaggedRightParindent=\skip77
+\JustifyingParindent=\skip78
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.st
+y
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+ (C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
+\col@sep=\dimen161
+\ar@mcellbox=\box53
+\extrarowheight=\dimen162
+\NC@list=\toks22
+\extratabsurround=\skip79
+\backup@length=\skip80
+\ar@cellbox=\box54
+)
+\TX@col@width=\dimen163
+\TX@old@table=\dimen164
+\TX@old@col=\dimen165
+\TX@target=\dimen166
+\TX@delta=\dimen167
+\TX@cols=\count296
+\TX@ftn=\toks23
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix
+.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count297
+\c@@ppsavesec=\count298
+\c@@ppsaveapp=\count299
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip81
+\bibsep=\skip82
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count300
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microty
+pe.sty
+Package: microtype 2025/02/11 v3.2a Micro-typographical refinements (RS)
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox
+.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count301
+)
+\MT@toks=\toks24
+\MT@tempbox=\box55
+\MT@count=\count302
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
+LaTeX Info: Redefining \leftprotrusion on input line 1088.
+\MT@prot@toks=\toks25
+LaTeX Info: Redefining \rightprotrusion on input line 1107.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen168
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count303
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microty
+pe-pdftex.def
+File: microtype-pdftex.def 2025/02/11 v3.2a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip83
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microty
+pe.cfg
+File: microtype.cfg 2025/02/11 v3.2a microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.
+sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen169
+\captionmargin=\dimen170
+\caption@leftmargin=\dimen171
+\caption@rightmargin=\dimen172
+\caption@width=\dimen173
+\caption@indent=\dimen174
+\caption@parindent=\dimen175
+\caption@hangindent=\dimen176
+Package caption Info: Standard document class detected.
+Package caption Info: french babel package is loaded.
+)
+\c@KVtest=\count304
+\sf@farskip=\skip84
+\sf@captopadj=\dimen177
+\sf@capskip=\skip85
+\sf@nearskip=\skip86
+\c@subfigure=\count305
+\c@subfigure@save=\count306
+\c@lofdepth=\count307
+\c@subtable=\count308
+\c@subtable@save=\count309
+\c@lotdepth=\count310
+\sf@top=\skip87
+\sf@bottom=\skip88
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/acronym\acronym.s
+ty
+Package: acronym 2025/01/17 v1.50 Support for acronyms (Tobias Oetiker)
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/bigfoot\suffix.st
+y
+Package: suffix 2006/07/15 1.5a Variant command support
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.s
+ty
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring
+.tex
+\xs_counta=\count311
+\xs_countb=\count312
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+)
+\AC@clearlist=\toks26
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry
+.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.st
+y
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count313
+\Gm@cntv=\count314
+\c@Gm@tempcnt=\count315
+\Gm@bindingoffset=\dimen178
+\Gm@wd@mp=\dimen179
+\Gm@odd@mp=\dimen180
+\Gm@even@mp=\dimen181
+\Gm@layoutwidth=\dimen182
+\Gm@layoutheight=\dimen183
+\Gm@layouthoffset=\dimen184
+\Gm@layoutvoffset=\dimen185
+\Gm@dimlist=\toks27
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry
+.cfg))
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace
+.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec
+.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box56
+\beforetitleunit=\skip89
+\aftertitleunit=\skip90
+\ttl@plus=\dimen186
+\ttl@minus=\dimen187
+\ttl@toksa=\toks28
+\titlewidth=\dimen188
+\titlewidthlast=\dimen189
+\titlewidthfirst=\dimen190
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings
+.sty
+\lst@mode=\count316
+\lst@gtempboxa=\box57
+\lst@token=\toks29
+\lst@length=\count317
+\lst@currlwidth=\dimen191
+\lst@column=\count318
+\lst@pos=\count319
+\lst@lostspace=\dimen192
+\lst@width=\dimen193
+\lst@newlines=\count320
+\lst@lineno=\count321
+\lst@maxwidth=\dimen194
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch
+.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.
+sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count322
+\lst@skipnumbers=\count323
+\lst@framebox=\box58
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings
+.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
+))
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/listingsutf8\list
+ingsutf8.sty
+Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\strin
+genc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfes
+cape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)))
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.st
+y
+Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\colo
+r.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolo
+r.ltx))
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages
+.sty
+Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count324
+\calc@Bcount=\count325
+\calc@Adimen=\dimen195
+\calc@Bdimen=\dimen196
+\calc@Askip=\skip91
+\calc@Bskip=\skip92
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count326
+\calc@Cskip=\skip93
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.s
+ty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen197
+\ESO@tempdimb=\dimen198
+)
+\AM@pagewidth=\dimen199
+\AM@pageheight=\dimen256
+\AM@fboxrule=\dimen257
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex
+.def
+File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count327
+\AM@pagebox=\box59
+\AM@global@opts=\toks30
+\AM@pagecnt=\count328
+\AM@toc@title=\toks31
+\AM@lof@heading=\toks32
+\c@AM@survey=\count329
+\AM@templatesizebox=\box60
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1
+.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1
+.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.
+sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.s
+ty
+Package: amsmath 2025/06/16 v2.17y AMS math features
+\@mathmargin=\skip94
+
+For additional information on amsmath, use the `?' option.
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.s
+ty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.st
+y
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks33
+\ex@=\dimen258
+))
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.st
+y
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen259
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.st
+y
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count330
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count331
+\leftroot@=\count332
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count333
+\DOTSCASE@=\count334
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box61
+\strutbox@=\box62
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen260
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count335
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count336
+\dotsspace@=\muskip18
+\c@parentequation=\count337
+\dspbrk@lvl=\count338
+\tag@help=\toks34
+\row@=\count339
+\column@=\count340
+\maxfields@=\count341
+\andhelp@=\toks35
+\eqnshift@=\dimen261
+\alignsep@=\dimen262
+\tagshift@=\dimen263
+\tagwidth@=\dimen264
+\totwidth@=\dimen265
+\lineht@=\dimen266
+\@envbody=\toks36
+\multlinegap=\skip95
+\multlinetaggap=\skip96
+\mathdisplay@stack=\toks37
+LaTeX Info: Redefining \[ on input line 2949.
+LaTeX Info: Redefining \] on input line 2950.
+) (latex_page_garde/page_garde.tex)
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 17
+2.
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backe
+nd-pdftex.def
+File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count342
+) (main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Info: Redefining \degres on input line 172.
+
+
+Package french.ldf Warning: Please load the "natbib" package
+(french.ldf)                BEFORE babel/french; reported on input line 172.
+
+LaTeX Info: Redefining \up on input line 172.
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-
+pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count343
+\scratchdimen=\dimen267
+\scratchbox=\box63
+\nofMPsegments=\count344
+\nofMParguments=\count345
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count346
+\MPscratchDim=\dimen268
+\MPnumerator=\count347
+\makeMPintoPDFobject=\count348
+\everyMPtoPDFconversion=\toks39
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epst
+opdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptio
+ns.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf
+-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+LaTeX Info: Redefining \microtypecontext on input line 172.
+Package microtype Info: Applying patch `item' on input line 172.
+Package microtype Info: Applying patch `toc' on input line 172.
+Package microtype Info: Applying patch `eqnum' on input line 172.
+Package microtype Info: Applying patch `footnote' on input line 172.
+Package microtype Info: Applying patch `verbatim' on input line 172.
+LaTeX Info: Redefining \microtypesetup on input line 172.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+
+
+LaTeX Warning: Command \showhyphens   has changed.
+               Check if current package is valid.
+
+LaTeX Info: Redefining \showhyphens on input line 172.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.
+cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(99.58464pt, 426.79135pt, 71.13188pt)
+* v-part:(T,H,B)=(99.58464pt, 674.33032pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=674.33032pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=27.31465pt
+* \topmargin=-9.68535pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@lstlisting=\count349
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflsca
+pe.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflsca
+pe-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.s
+ty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+<latex_page_garde/udbl.png, id=1, 505.89pt x 289.08pt>
+File: latex_page_garde/udbl.png Graphic file (type png)
+<use latex_page_garde/udbl.png>
+Package pdftex.def Info: latex_page_garde/udbl.png  used on input line 178.
+(pdftex.def)             Requested size: 303.53633pt x 173.44933pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+ []\T1/lmr/m/it/12 (+20) Travail présenté et défendu en vue de l'obtention
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+ \T1/lmr/m/it/12 (+20) du grade d'ingénieur tech-ni-cien en In-for-ma-tique
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+ \T1/lmr/m/n/12 (+20) Présenté par :\T1/lmr/bx/n/12 (+20) MUTOKE MUSULE An-dré
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+ \T1/lmr/m/n/12 (+20) Filière : \T1/lmr/bx/n/12 (+20) Réseaux et Télé-com-mu-ni
+-ca-tions
+ []
+
+
+
+[1
+
+{C:/Users/AndreMUTOKE/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/User
+s/AndreMUTOKE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./la
+tex_page_garde/udbl.png>]
+File: latex_page_garde/udbl.png Graphic file (type png)
+<use latex_page_garde/udbl.png>
+Package pdftex.def Info: latex_page_garde/udbl.png  used on input line 178.
+(pdftex.def)             Requested size: 303.53633pt x 173.44933pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+ []\T1/lmr/m/it/12 (+20) Travail présenté et défendu en vue de l'obtention
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+ \T1/lmr/m/it/12 (+20) du grade d'ingénieur tech-ni-cien en In-for-ma-tique
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+ \T1/lmr/m/n/12 (+20) Présenté par : \T1/lmr/bx/n/12 (+20) MU-TOKE MUSULE An-dr
+é
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+ \T1/lmr/m/n/12 (+20) Filière : \T1/lmr/bx/n/12 (+20) Réseaux et Télé-com-mu-ni
+-ca-tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+ \T1/lmr/m/n/12 (+20) Directeur : \T1/lmr/bx/n/12 (+20) Msc Ir KA-PU-L-ULA Dubo
+is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+ \T1/lmr/m/n/12 (+20) Co-directeur : \T1/lmr/bx/n/12 (+20) Msc Ir KA-BALA Larry
+
+ []
+
+
+
+[2] (epigraphe/epigraphe.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 4--206
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--206
+
+ []
+
+
+
+[1
+
+
+] (dedicace/dedicace.tex
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+1.
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
+
+[2
+
+
+{C:/Users/AndreMUTOKE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.e
+nc}] (remerciement/remerciement.tex
+Underfull \hbox (badness 10000) in paragraph at lines 19--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+ []\T1/lmr/bx/n/12 (+20) L'auteur
+ []
+
+)
+
+[3
+
+
+] (main.lof
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5
+.
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5
+.
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+5.
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+5.
+
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 5.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 5.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 5.
+
+
+Package natbib Warning: Citation `LT5510' on page IV undefined on input line 17
+.
+
+
+Package natbib Warning: Citation `ad8317' on page IV undefined on input line 23
+.
+
+
+
+[4
+
+
+])
+\tf@lof=\write3
+\openout3 = `main.lof'.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[5] (main.lot)
+\tf@lot=\write4
+\openout4 = `main.lot'.
+
+
+
+[6
+
+
+] (acronymes/acronymes.tex
+
+[7
+
+
+])
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[8] (main.toc
+
+[9
+
+]
+Package acronym Info: Label `acro:MBD' newly defined as it shall be overridden
+although it is yet undefined on input line 58.
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[10]
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[11])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[12] (avantpropos/avantpropos.tex)
+
+[13
+
+
+] (introduction/introduction.tex
+Chapter 0.
+
+
+[1
+
+
+]
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[2]
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[3]) (chap1/chap1.tex
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[4]
+Chapter 1.
+
+
+[5
+
+]) (chap2/chap2.tex
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[6]
+Chapter 2.
+Package acronym Info: Label `acro:GUI' newly defined as it shall be overridden
+although it is yet undefined on input line 8.
+
+Overfull \hbox (13.17589pt too wide) in paragraph at lines 5--9
+[]\T1/lmr/m/n/12 (-20) Ce chapitre se con-sacre à la con-cep-tion dé-tail-lée d
+e notre outil d'aide à l'homologation,
+ []
+
+Package acronym Info: Label `acro:LRU' newly defined as it shall be overridden
+although it is yet undefined on input line 13.
+
+Package natbib Warning: Citation `lru_mdel' on page 7 undefined on input line 2
+1.
+
+
+Package natbib Warning: Citation `lru_mdel' on page 7 undefined on input line 2
+6.
+
+
+Package natbib Warning: Citation `lru_mdel' on page 7 undefined on input line 3
+2.
+
+
+Package natbib Warning: Citation `lru_mdel' on page 7 undefined on input line 3
+6.
+
+
+Package natbib Warning: Citation `model_v' on page 7 undefined on input line 45
+.
+
+
+
+[7
+
+]
+
+Package natbib Warning: Citation `model_based_definition' on page 8 undefined o
+n input line 53.
+
+
+Package natbib Warning: Citation `SysML' on page 8 undefined on input line 59.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[8]
+Package acronym Info: Label `acro:CEM' newly defined as it shall be overridden
+although it is yet undefined on input line 85.
+Package acronym Info: Label `acro:CISPR' newly defined as it shall be overridde
+n
+although it is yet undefined on input line 87.
+
+
+Package natbib Warning: Citation `SysML' on page 9 undefined on input line 97.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[9]
+
+Package natbib Warning: Citation `travail_rdc' on page 10 undefined on input li
+ne 120.
+
+<mesDiagrammes/exigences/DiagrammeExigence.png, id=85, 1064.97874pt x 763.85374
+pt>
+File: mesDiagrammes/exigences/DiagrammeExigence.png Graphic file (type png)
+<use mesDiagrammes/exigences/DiagrammeExigence.png>
+Package pdftex.def Info: mesDiagrammes/exigences/DiagrammeExigence.png  used on
+ input line 140.
+(pdftex.def)             Requested size: 362.08798pt x 259.70683pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[10]
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[11 <./mesDiagrammes/exigences/DiagrammeExigence.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[12]
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[13]
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[14]
+<mesDiagrammes/userCase/Cas_d_utilisation.png, id=103, 1088.065pt x 577.15625pt
+>
+File: mesDiagrammes/userCase/Cas_d_utilisation.png Graphic file (type png)
+<use mesDiagrammes/userCase/Cas_d_utilisation.png>
+Package pdftex.def Info: mesDiagrammes/userCase/Cas_d_utilisation.png  used on 
+input line 290.
+(pdftex.def)             Requested size: 369.93721pt x 196.23051pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[15]
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[16 <./mesDiagrammes/userCase/Cas_d_utilisation.png>]
+<mesDiagrammes/activite/activite1.jpg, id=112, 755.82375pt x 885.3075pt>
+File: mesDiagrammes/activite/activite1.jpg Graphic file (type jpg)
+<use mesDiagrammes/activite/activite1.jpg>
+Package pdftex.def Info: mesDiagrammes/activite/activite1.jpg  used on input li
+ne 346.
+(pdftex.def)             Requested size: 302.32414pt x 354.11671pt.
+<mesDiagrammes/activite/ActivityHomologationmytest.png, id=113, 438.13687pt x 1
+450.6697pt>
+File: mesDiagrammes/activite/ActivityHomologationmytest.png Graphic file (type 
+png)
+<use mesDiagrammes/activite/ActivityHomologationmytest.png>
+Package pdftex.def Info: mesDiagrammes/activite/ActivityHomologationmytest.png 
+ used on input line 357.
+(pdftex.def)             Requested size: 197.15976pt x 652.79533pt.
+
+
+LaTeX Warning: Float too large for page by 5.29832pt on input line 360.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[17]
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[18{C:/Users/AndreMUTOKE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ma
+thit.enc} <./mesDiagrammes/activite/activite1.jpg>]
+Overfull \hbox (16.64606pt too wide) in paragraph at lines 400--401
+[]$\OML/lmm/m/it/12 m[]radiationRadialAxis$\T1/lmr/m/n/12 (-20) , $\OML/lmm/m/i
+t/12 m[]radiationAngularAxis$\T1/lmr/m/n/12 (-20) : QVal-ueAxis*,
+ []
+
+
+Overfull \hbox (7.17154pt too wide) in paragraph at lines 403--404
+[]$\OML/lmm/m/it/12 m[]spectrumAxisXT$\T1/lmr/m/n/12 (-20) , $\OML/lmm/m/it/12 
+m[]spectrumAxisYT$\T1/lmr/m/n/12 (-20) : QVal-ueAxis* : Axes
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[19]
+Overfull \hbox (7.99037pt too wide) in paragraph at lines 440--442
+[]\T1/lmr/m/n/12 (-20) onDisplayTriggered(), on-Mark-er-Trig-gered(), on-Stim-u
+-lus-Trig-gered(),
+ []
+
+
+Overfull \hbox (0.52705pt too wide) in paragraph at lines 440--442
+\T1/lmr/m/n/12 (-20) on-Cal-i-brateTrig-gered(), on-Re-call-Trig-gered(), on-Co
+n-figTrig-gered(),
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[20]
+Overfull \hbox (3.0873pt too wide) in paragraph at lines 460--462
+[]$\OML/lmm/m/it/12 dispalyButtonsContainer$\T1/lmr/m/n/12 (-20) , $\OML/lmm/m/
+it/12 markerButtonsContainer$\T1/lmr/m/n/12 (-20) , $\OML/lmm/m/it/12 stimulus\
+T1/lmr/m/n/12 (-20) -
+ []
+
+
+Overfull \hbox (2.29547pt too wide) in paragraph at lines 460--462
+\OML/lmm/m/it/12 ButtonsContainer$\T1/lmr/m/n/12 (-20) , $\OML/lmm/m/it/12 cali
+brateButtonsContainer$\T1/lmr/m/n/12 (-20) , $\OML/lmm/m/it/12 configButtons\T1
+/lmr/m/n/12 (-20) -
+ []
+
+
+Overfull \hbox (3.56938pt too wide) in paragraph at lines 467--468
+[]$\OML/lmm/m/it/12 fileMenu$\T1/lmr/m/n/12 (-20) , $\OML/lmm/m/it/12 editMenu$
+\T1/lmr/m/n/12 (-20) , $\OML/lmm/m/it/12 viewMenu$\T1/lmr/m/n/12 (-20) , $\OML/
+lmm/m/it/12 runMenu$\T1/lmr/m/n/12 (-20) , $\OML/lmm/m/it/12 settingMenu$\T1/lm
+r/m/n/12 (-20) , $\OML/lmm/m/it/12 help\T1/lmr/m/n/12 (-20) -
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[21]) (chap3/chap3.tex
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[22]
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[23 <./mesDiagrammes/activite/ActivityHomologationmytest.png>]
+Chapter 3.
+
+Overfull \hbox (18.39264pt too wide) in paragraph at lines 7--11
+[]\T1/lmr/m/n/12 (-20) Ce chapitre dé-taille la mise en ÷u-vre pra-tique de not
+re sys-tème d'aide à l'homologation
+ []
+
+
+Package natbib Warning: Citation `iec6000' on page 24 undefined on input line 1
+9.
+
+
+Package natbib Warning: Citation `iec6000' on page 24 undefined on input line 2
+0.
+
+
+Package natbib Warning: Citation `iec6000' on page 24 undefined on input line 2
+3.
+
+
+Package natbib Warning: Citation `iec6000' on page 24 undefined on input line 2
+8.
+
+
+Package natbib Warning: Citation `absorbeurTSA' on page 24 undefined on input l
+ine 36.
+
+
+
+[24
+
+]
+
+Package natbib Warning: Citation `iec6000' on page 25 undefined on input line 4
+2.
+
+
+Package natbib Warning: Citation `absorbeurTSA' on page 25 undefined on input l
+ine 49.
+
+
+Package natbib Warning: Citation `siepel_notitle_nodate' on page 25 undefined o
+n input line 53.
+
+
+Package natbib Warning: Citation `siepel_notitle_nodate' on page 25 undefined o
+n input line 58.
+
+Package acronym Info: Label `acro:HIRF' newly defined as it shall be overridden
+
+although it is yet undefined on input line 63.
+
+Package natbib Warning: Citation `siepel_notitle_nodate' on page 25 undefined o
+n input line 68.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[25]
+
+Package natbib Warning: Citation `siepel_notitle_nodate' on page 26 undefined o
+n input line 75.
+
+
+Package natbib Warning: Citation `noauthor_specification_2017' on page 26 undef
+ined on input line 87.
+
+
+Package natbib Warning: Citation `noauthor_specification_2017' on page 26 undef
+ined on input line 92.
+
+
+Package natbib Warning: Citation `absorbeurTSA' on page 26 undefined on input l
+ine 101.
+
+<mesDiagrammes/img/pyramidAbsorberOrginal.png, id=144, 289.08pt x 216.81pt>
+File: mesDiagrammes/img/pyramidAbsorberOrginal.png Graphic file (type png)
+<use mesDiagrammes/img/pyramidAbsorberOrginal.png>
+Package pdftex.def Info: mesDiagrammes/img/pyramidAbsorberOrginal.png  used on 
+input line 105.
+(pdftex.def)             Requested size: 231.2643pt x 173.44823pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[26]
+<mesDiagrammes/img/pyramidISOsurface.png, id=148, 289.08pt x 216.81pt>
+File: mesDiagrammes/img/pyramidISOsurface.png Graphic file (type png)
+<use mesDiagrammes/img/pyramidISOsurface.png>
+Package pdftex.def Info: mesDiagrammes/img/pyramidISOsurface.png  used on input
+ line 117.
+(pdftex.def)             Requested size: 231.2643pt x 173.44823pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[27{C:/Users/AndreMUTOKE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm
+.enc} <./mesDiagrammes/img/pyramidAbsorberOrginal.png> <./mesDiagrammes/img/pyr
+amidISOsurface.png>]
+
+Package natbib Warning: Citation `absorbeurTSA' on page 28 undefined on input l
+ine 133.
+
+
+Package natbib Warning: Citation `absorbeurTSA' on page 28 undefined on input l
+ine 150.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[28{C:/Users/AndreMUTOKE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ma
+thsy.enc}]
+<mesDiagrammes/img/anechoicChamber.png, id=161, 289.08pt x 216.81pt>
+File: mesDiagrammes/img/anechoicChamber.png Graphic file (type png)
+<use mesDiagrammes/img/anechoicChamber.png>
+Package pdftex.def Info: mesDiagrammes/img/anechoicChamber.png  used on input l
+ine 181.
+(pdftex.def)             Requested size: 231.2643pt x 173.44823pt.
+<mesDiagrammes/img/anechoicChamber2.png, id=162, 289.08pt x 216.81pt>
+File: mesDiagrammes/img/anechoicChamber2.png Graphic file (type png)
+<use mesDiagrammes/img/anechoicChamber2.png>
+Package pdftex.def Info: mesDiagrammes/img/anechoicChamber2.png  used on input 
+line 187.
+(pdftex.def)             Requested size: 231.2643pt x 173.44823pt.
+Package acronym Info: Label `acro:VNA' newly defined as it shall be overridden
+although it is yet undefined on input line 192.
+
+
+Package natbib Warning: Citation `chetouani_developpement_nodate' on page 29 un
+defined on input line 197.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[29]
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[30 <./mesDiagrammes/img/anechoicChamber.png> <./mesDiagrammes/img/anechoicCham
+ber2.png>]
+<mesDiagrammes/MesureRF2.png, id=172, 784.9325pt x 495.8525pt>
+File: mesDiagrammes/MesureRF2.png Graphic file (type png)
+<use mesDiagrammes/MesureRF2.png>
+Package pdftex.def Info: mesDiagrammes/MesureRF2.png  used on input line 220.
+(pdftex.def)             Requested size: 392.46529pt x 247.92564pt.
+Package acronym Info: Label `acro:RSSI' newly defined as it shall be overridden
+
+although it is yet undefined on input line 231.
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[31 <./mesDiagrammes/MesureRF2.png>]
+
+Package natbib Warning: Citation `roodaki_lavasani_fard_radiation_2024' on page
+ 32 undefined on input line 250.
+
+<mesDiagrammes/melangeurSignaux.png, id=177, 348.30125pt x 285.065pt>
+File: mesDiagrammes/melangeurSignaux.png Graphic file (type png)
+<use mesDiagrammes/melangeurSignaux.png>
+Package pdftex.def Info: mesDiagrammes/melangeurSignaux.png  used on input line
+ 260.
+(pdftex.def)             Requested size: 174.15019pt x 142.53215pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[32 <./mesDiagrammes/melangeurSignaux.png>]
+<mesDiagrammes/melangeurSignauxFiltrePassebas.png, id=182, 549.05125pt x 285.06
+5pt>
+File: mesDiagrammes/melangeurSignauxFiltrePassebas.png Graphic file (type png)
+<use mesDiagrammes/melangeurSignauxFiltrePassebas.png>
+Package pdftex.def Info: mesDiagrammes/melangeurSignauxFiltrePassebas.png  used
+ on input line 292.
+(pdftex.def)             Requested size: 274.52495pt x 142.53215pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[33 <./mesDiagrammes/melangeurSignauxFiltrePassebas.png>]
+<mesDiagrammes/shemaLTC5510.png, id=189, 684.30656pt x 324.46219pt>
+File: mesDiagrammes/shemaLTC5510.png Graphic file (type png)
+<use mesDiagrammes/shemaLTC5510.png>
+Package pdftex.def Info: mesDiagrammes/shemaLTC5510.png  used on input line 313
+.
+(pdftex.def)             Requested size: 410.5871pt x 194.6788pt.
+
+
+Package natbib Warning: Citation `LT5510' on page 34 undefined on input line 31
+4.
+
+<mesDiagrammes/img/LTC5510.jpeg, id=190, 983.675pt x 822.07124pt>
+File: mesDiagrammes/img/LTC5510.jpeg Graphic file (type jpg)
+<use mesDiagrammes/img/LTC5510.jpeg>
+Package pdftex.def Info: mesDiagrammes/img/LTC5510.jpeg  used on input line 320
+.
+(pdftex.def)             Requested size: 196.7315pt x 164.41133pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[34 <./mesDiagrammes/shemaLTC5510.png> <./mesDiagrammes/img/LTC5510.jpeg>]
+<mesDiagrammes/img/ADF4351.jpeg, id=196, 2569.6pt x 2014.52625pt>
+File: mesDiagrammes/img/ADF4351.jpeg Graphic file (type jpg)
+<use mesDiagrammes/img/ADF4351.jpeg>
+Package pdftex.def Info: mesDiagrammes/img/ADF4351.jpeg  used on input line 340
+.
+(pdftex.def)             Requested size: 256.97505pt x 201.46443pt.
+
+
+Package natbib Warning: Citation `roodaki_lavasani_fard_radiation_2024' on page
+ 35 undefined on input line 351.
+
+<mesDiagrammes/AmpliLog3.png, id=197, 778.91pt x 522.95375pt>
+File: mesDiagrammes/AmpliLog3.png Graphic file (type png)
+<use mesDiagrammes/AmpliLog3.png>
+Package pdftex.def Info: mesDiagrammes/AmpliLog3.png  used on input line 355.
+(pdftex.def)             Requested size: 311.55849pt x 209.1778pt.
+<mesDiagrammes/AmpliLog2Test.png, id=198, 530.98375pt x 522.95375pt>
+File: mesDiagrammes/AmpliLog2Test.png Graphic file (type png)
+<use mesDiagrammes/AmpliLog2Test.png>
+Package pdftex.def Info: mesDiagrammes/AmpliLog2Test.png  used on input line 37
+2.
+(pdftex.def)             Requested size: 212.38972pt x 209.1778pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[35 <./mesDiagrammes/img/ADF4351.jpeg>]
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[36{C:/Users/AndreMUTOKE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ma
+thex.enc} <./mesDiagrammes/AmpliLog3.png> <./mesDiagrammes/AmpliLog2Test.png>]
+<mesDiagrammes/AmpliLog2Transistor.png, id=208, 670.505pt x 605.26125pt>
+File: mesDiagrammes/AmpliLog2Transistor.png Graphic file (type png)
+<use mesDiagrammes/AmpliLog2Transistor.png>
+Package pdftex.def Info: mesDiagrammes/AmpliLog2Transistor.png  used on input l
+ine 428.
+(pdftex.def)             Requested size: 268.19725pt x 242.1002pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[37]
+
+Package natbib Warning: Citation `ad8317' on page 38 undefined on input line 44
+9.
+
+<mesDiagrammes/img/ad8317_circuit.png, id=213, 505.89pt x 299.61937pt>
+File: mesDiagrammes/img/ad8317_circuit.png Graphic file (type png)
+<use mesDiagrammes/img/ad8317_circuit.png>
+Package pdftex.def Info: mesDiagrammes/img/ad8317_circuit.png  used on input li
+ne 453.
+(pdftex.def)             Requested size: 303.53633pt x 179.77301pt.
+
+Package natbib Warning: Citation `ad8317' on page 38 undefined on input line 45
+4.
+
+<mesDiagrammes/myHOMOLOG.png, id=214, 590.205pt x 878.53218pt>
+File: mesDiagrammes/myHOMOLOG.png Graphic file (type png)
+<use mesDiagrammes/myHOMOLOG.png>
+Package pdftex.def Info: mesDiagrammes/myHOMOLOG.png  used on input line 463.
+(pdftex.def)             Requested size: 413.14067pt x 614.96834pt.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
+74.
+(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[38 <./mesDiagrammes/AmpliLog2Transistor.png>]
+Package acronym Info: Label `acro:FFT' newly defined as it shall be overridden
+although it is yet undefined on input line 494.
+<mesDiagrammes/QtCreator.png, id=219, 1927.2pt x 1084.05pt>
+File: mesDiagrammes/QtCreator.png Graphic file (type png)
+<use mesDiagrammes/QtCreator.png>
+Package pdftex.def Info: mesDiagrammes/QtCreator.png  used on input line 622.
+(pdftex.def)             Requested size: 404.72395pt x 227.65721pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[39 <./mesDiagrammes/img/ad8317_circuit.png>]
+
+LaTeX Warning: Text page 40 contains only floats.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[40 <./mesDiagrammes/myHOMOLOG.png>]
+<mesDiagrammes/pwrMeterMode.png, id=231, 813.0375pt x 1445.4pt>
+File: mesDiagrammes/pwrMeterMode.png Graphic file (type png)
+<use mesDiagrammes/pwrMeterMode.png>
+Package pdftex.def Info: mesDiagrammes/pwrMeterMode.png  used on input line 638
+.
+(pdftex.def)             Requested size: 325.20924pt x 578.14977pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[41 <./mesDiagrammes/QtCreator.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[42 <./mesDiagrammes/pwrMeterMode.png>]
+<mesDiagrammes/trameUART.png, id=240, 605.26125pt x 112.16907pt>
+File: mesDiagrammes/trameUART.png Graphic file (type png)
+<use mesDiagrammes/trameUART.png>
+Package pdftex.def Info: mesDiagrammes/trameUART.png  used on input line 679.
+(pdftex.def)             Requested size: 242.1002pt x 44.86682pt.
+)
+Overfull \hbox (18.39264pt too wide) in paragraph at lines 692--246
+[]\T1/lmr/m/n/12 (-20) Ce chapitre dé-taille la mise en ÷u-vre pra-tique de not
+re sys-tème d'aide à l'homologation
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[43 <./mesDiagrammes/trameUART.png>] (chap4/chap4.tex
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[44]
+Chapter 4.
+
+Package natbib Warning: Citation `iec6000' on page 45 undefined on input line 1
+6.
+
+
+LaTeX Warning: File `CST_Studio/TestingAntenna/testTingAntenna/Export/hornAnten
+na.png' not found on input line 22.
+
+
+! Package pdftex.def Error: File `CST_Studio/TestingAntenna/testTingAntenna/Exp
+ort/hornAntenna.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 ...na/testTingAntenna/Export/hornAntenna.png}
+                                                  
+? 
+<mesDiagrammes/frequenceAntenne.png, id=248, 730.98094pt x 506.6428pt>
+File: mesDiagrammes/frequenceAntenne.png Graphic file (type png)
+<use mesDiagrammes/frequenceAntenne.png>
+Package pdftex.def Info: mesDiagrammes/frequenceAntenne.png  used on input line
+ 36.
+(pdftex.def)             Requested size: 365.48958pt x 253.32079pt.
+<mesDiagrammes/img/signalTest.png, id=249, 746.79pt x 545.78906pt>
+File: mesDiagrammes/img/signalTest.png Graphic file (type png)
+<use mesDiagrammes/img/signalTest.png>
+Package pdftex.def Info: mesDiagrammes/img/signalTest.png  used on input line 4
+3.
+(pdftex.def)             Requested size: 373.39407pt x 272.89386pt.
+
+LaTeX Warning: Reference `tab:table1' on page 45 undefined on input line 51.
+
+
+LaTeX Warning: File `CST_Studio/TestingAntenna/testTingAntenna/Export/rayonneme
+ntDiag.png' not found on input line 58.
+
+
+! Package pdftex.def Error: File `CST_Studio/TestingAntenna/testTingAntenna/Exp
+ort/rayonnementDiag.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 ...estTingAntenna/Export/rayonnementDiag.png}
+                                                  
+? 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[45
+
+]
+<mesDiagrammes/img/testRayonnement.png, id=254, 766.36313pt x 776.14969pt>
+File: mesDiagrammes/img/testRayonnement.png Graphic file (type png)
+<use mesDiagrammes/img/testRayonnement.png>
+Package pdftex.def Info: mesDiagrammes/img/testRayonnement.png  used on input l
+ine 72.
+(pdftex.def)             Requested size: 383.18063pt x 388.0739pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<mesDiagrammes/img/dialohue.png, id=255, 404.26031pt x 201.75375pt>
+File: mesDiagrammes/img/dialohue.png Graphic file (type png)
+<use mesDiagrammes/img/dialohue.png>
+Package pdftex.def Info: mesDiagrammes/img/dialohue.png  used on input line 84.
+
+(pdftex.def)             Requested size: 202.12965pt x 100.87662pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<mesDiagrammes/img/emchomolgation.png, id=256, 1189.44376pt x 455.45157pt>
+File: mesDiagrammes/img/emchomolgation.png Graphic file (type png)
+<use mesDiagrammes/img/emchomolgation.png>
+Package pdftex.def Info: mesDiagrammes/img/emchomolgation.png  used on input li
+ne 100.
+(pdftex.def)             Requested size: 416.31155pt x 159.41043pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[46 <./mesDiagrammes/frequenceAntenne.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[47 <./mesDiagrammes/img/signalTest.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[48 <./mesDiagrammes/img/testRayonnement.png> <./mesDiagrammes/img/dialohue.png
+>]
+<mesDiagrammes/plotsTest/Power Radiated.png, id=271, 602.25pt x 376.40625pt>
+File: mesDiagrammes/plotsTest/Power Radiated.png Graphic file (type png)
+<use mesDiagrammes/plotsTest/Power Radiated.png>
+Package pdftex.def Info: mesDiagrammes/plotsTest/Power Radiated.png  used on in
+put line 200.
+(pdftex.def)             Requested size: 210.79065pt x 131.74416pt.
+<mesDiagrammes/plotsTest/VSWR1.png, id=272, 602.25pt x 376.40625pt>
+File: mesDiagrammes/plotsTest/VSWR1.png Graphic file (type png)
+<use mesDiagrammes/plotsTest/VSWR1.png>
+Package pdftex.def Info: mesDiagrammes/plotsTest/VSWR1.png  used on input line 
+213.
+(pdftex.def)             Requested size: 210.79065pt x 131.74416pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[49 <./mesDiagrammes/img/emchomolgation.png> <./mesDiagrammes/plotsTest/Power R
+adiated.png>]
+<mesDiagrammes/plotsTest/AVG-Band_LW.png, id=278, 602.25pt x 376.40625pt>
+File: mesDiagrammes/plotsTest/AVG-Band_LW.png Graphic file (type png)
+<use mesDiagrammes/plotsTest/AVG-Band_LW.png>
+Package pdftex.def Info: mesDiagrammes/plotsTest/AVG-Band_LW.png  used on input
+ line 225.
+(pdftex.def)             Requested size: 240.89572pt x 150.55983pt.
+<mesDiagrammes/plotsTest/Peak-Band_LW.png, id=279, 602.25pt x 376.40625pt>
+File: mesDiagrammes/plotsTest/Peak-Band_LW.png Graphic file (type png)
+<use mesDiagrammes/plotsTest/Peak-Band_LW.png>
+Package pdftex.def Info: mesDiagrammes/plotsTest/Peak-Band_LW.png  used on inpu
+t line 226.
+(pdftex.def)             Requested size: 240.89572pt x 150.55983pt.
+<mesDiagrammes/plotsTest/QP-Band_LW.png, id=280, 602.25pt x 376.40625pt>
+File: mesDiagrammes/plotsTest/QP-Band_LW.png Graphic file (type png)
+<use mesDiagrammes/plotsTest/QP-Band_LW.png>
+Package pdftex.def Info: mesDiagrammes/plotsTest/QP-Band_LW.png  used on input 
+line 227.
+(pdftex.def)             Requested size: 240.89572pt x 150.55983pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[50 <./mesDiagrammes/plotsTest/VSWR1.png>]
+Overfull \hbox (1.26517pt too wide) in paragraph at lines 261--261
+|\T1/lmr/bx/n/12 (-20) 4.5.1 . Coûts Ini-ti-aux et d'Investissement (In-fras-tr
+uc-ture et Équipement)| 
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[51 <./mesDiagrammes/plotsTest/AVG-Band_LW.png> <./mesDiagrammes/plotsTest/Peak
+-Band_LW.png> <./mesDiagrammes/plotsTest/QP-Band_LW.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[52]
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[53]) (conclusion/conclusion.tex
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[54]
+
+[55
+
+]
+Overfull \hbox (10.99388pt too wide) in paragraph at lines 81--82
+[]\T1/lmr/m/n/12 (-20) Intelligence Ar-ti-fi-cielle et Ap-pren-tis-sage Au-toma
+-tique : Ex-plorer l'intégration
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[56]
+Overfull \hbox (33.0081pt too wide) in paragraph at lines 103--104
+[]\T1/lmr/m/n/12 (-20) Autres équipements ra-dioélec-triques miniers : Adapter 
+l'outil pour l'homologation
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[57])
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[58]
+No file main.bbl.
+<formulaire_demande_homologation.pdf, id=314, 597.50829pt x 845.0471pt>
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf>
+Package pdftex.def Info: formulaire_demande_homologation.pdf  used on input lin
+e 271.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<formulaire_demande_homologation.pdf, id=316, page=1, 597.50829pt x 845.0471pt>
+
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 1>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page1 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 1>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page1 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+[59
+
+
+]
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 1>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page1 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 1>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page1 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 1>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page1 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[60
+
+ <./formulaire_demande_homologation.pdf>]
+<formulaire_demande_homologation.pdf, id=617, page=2, 597.50829pt x 845.0471pt>
+
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 2>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page2 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 2>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page2 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 2>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page2 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[61
+
+ <./formulaire_demande_homologation.pdf>]
+<formulaire_demande_homologation.pdf, id=654, page=3, 597.50829pt x 845.0471pt>
+
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 3>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page3 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 3>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page3 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 3>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page3 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[62
+
+ <./formulaire_demande_homologation.pdf>]
+<formulaire_demande_homologation.pdf, id=701, page=4, 597.50829pt x 845.0471pt>
+
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 4>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page4 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 4>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page4 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 4>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page4 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[63
+
+ <./formulaire_demande_homologation.pdf>]
+<formulaire_client.pdf, id=726, 597.50829pt x 845.0471pt>
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf>
+Package pdftex.def Info: formulaire_client.pdf  used on input line 273.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<formulaire_client.pdf, id=728, page=1, 597.50829pt x 845.0471pt>
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 1>
+Package pdftex.def Info: formulaire_client.pdf , page1 used on input line 273.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 1>
+Package pdftex.def Info: formulaire_client.pdf , page1 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 1>
+Package pdftex.def Info: formulaire_client.pdf , page1 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 1>
+Package pdftex.def Info: formulaire_client.pdf , page1 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 1>
+Package pdftex.def Info: formulaire_client.pdf , page1 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[64
+
+ <./formulaire_client.pdf>]
+<formulaire_client.pdf, id=774, page=2, 597.50829pt x 845.0471pt>
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 2>
+Package pdftex.def Info: formulaire_client.pdf , page2 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 2>
+Package pdftex.def Info: formulaire_client.pdf , page2 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 2>
+Package pdftex.def Info: formulaire_client.pdf , page2 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[65
+
+ <./formulaire_client.pdf>]
+<formulaire_client.pdf, id=790, page=3, 597.50829pt x 845.0471pt>
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 3>
+Package pdftex.def Info: formulaire_client.pdf , page3 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 3>
+Package pdftex.def Info: formulaire_client.pdf , page3 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 3>
+Package pdftex.def Info: formulaire_client.pdf , page3 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[66
+
+ <./formulaire_client.pdf>]
+<formulaire_client.pdf, id=800, page=4, 597.50829pt x 845.0471pt>
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 4>
+Package pdftex.def Info: formulaire_client.pdf , page4 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 4>
+Package pdftex.def Info: formulaire_client.pdf , page4 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 4>
+Package pdftex.def Info: formulaire_client.pdf , page4 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[67
+
+ <./formulaire_client.pdf>]
+<formulaire_client.pdf, id=804, page=5, 597.50829pt x 845.0471pt>
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 5>
+Package pdftex.def Info: formulaire_client.pdf , page5 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 5>
+Package pdftex.def Info: formulaire_client.pdf , page5 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 5>
+Package pdftex.def Info: formulaire_client.pdf , page5 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[68
+
+ <./formulaire_client.pdf>]
+<formulaireInform.pdf, id=808, 597.50829pt x 845.0471pt>
+File: formulaireInform.pdf Graphic file (type pdf)
+<use formulaireInform.pdf>
+Package pdftex.def Info: formulaireInform.pdf  used on input line 275.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<formulaireInform.pdf, id=810, page=1, 597.50829pt x 845.0471pt>
+File: formulaireInform.pdf Graphic file (type pdf)
+<use formulaireInform.pdf, page 1>
+Package pdftex.def Info: formulaireInform.pdf , page1 used on input line 275.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: formulaireInform.pdf Graphic file (type pdf)
+<use formulaireInform.pdf, page 1>
+Package pdftex.def Info: formulaireInform.pdf , page1 used on input line 275.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaireInform.pdf Graphic file (type pdf)
+<use formulaireInform.pdf, page 1>
+Package pdftex.def Info: formulaireInform.pdf , page1 used on input line 275.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaireInform.pdf Graphic file (type pdf)
+<use formulaireInform.pdf, page 1>
+Package pdftex.def Info: formulaireInform.pdf , page1 used on input line 275.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: formulaireInform.pdf Graphic file (type pdf)
+<use formulaireInform.pdf, page 1>
+Package pdftex.def Info: formulaireInform.pdf , page1 used on input line 275.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[69
+
+ <./formulaireInform.pdf>]
+<formulaireInform.pdf, id=823, page=2, 597.50829pt x 845.0471pt>
+File: formulaireInform.pdf Graphic file (type pdf)
+<use formulaireInform.pdf, page 2>
+Package pdftex.def Info: formulaireInform.pdf , page2 used on input line 275.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaireInform.pdf Graphic file (type pdf)
+<use formulaireInform.pdf, page 2>
+Package pdftex.def Info: formulaireInform.pdf , page2 used on input line 275.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: formulaireInform.pdf Graphic file (type pdf)
+<use formulaireInform.pdf, page 2>
+Package pdftex.def Info: formulaireInform.pdf , page2 used on input line 275.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[70
+
+ <./formulaireInform.pdf>]
+
+Package natbib Warning: There were undefined citations.
+
+(main.aux)
+ ***********
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-06-09>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 14889 strings out of 468221
+ 261966 string characters out of 5429988
+ 935452 words of memory out of 5000000
+ 42925 multiletter control sequences out of 15000+600000
+ 678702 words of font info for 149 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 69i,17n,79p,1003b,1972s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/AndreMUTOKE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/AndreMUTOKE/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb><C:/Users/AndreMUTOKE/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/AndreMUTOKE/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/AndreMUT
+OKE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
+Users/AndreMUTOKE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr12.pfb><C:/Users/AndreMUTOKE/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmr17.pfb><C:/Users/AndreMUTOKE/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/AndreMUTOKE/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/AndreMUTOKE/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/And
+reMUTOKE/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Use
+rs/AndreMUTOKE/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb>
+<C:/Users/AndreMUTOKE/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex1
+0.pfb><C:/Users/AndreMUTOKE/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm
+/lmmi12.pfb><C:/Users/AndreMUTOKE/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/lm/lmmi6.pfb><C:/Users/AndreMUTOKE/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/lm/lmmi8.pfb><C:/Users/AndreMUTOKE/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/lm/lmr12.pfb><C:/Users/AndreMUTOKE/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/lm/lmr6.pfb><C:/Users/AndreMUTOKE/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/AndreMUTOKE/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/AndreMUTOKE/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/AndreMUTOKE/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/AndreMUTOKE/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/AndreMUTOKE
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/Andre
+MUTOKE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10
+.pfb>
+Output written on main.pdf (85 pages, 3030525 bytes).
+PDF statistics:
+ 912 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 27899 words of extra memory for PDF output out of 29859 (max. 10000000)
+

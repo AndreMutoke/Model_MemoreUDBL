@@ -1,0 +1,280 @@
+%====================================================================
+%=  Author : André MUTOKE                                           =
+%=  file : main.tex                                                 =
+%=  Description : Ce fichier contient la strcutre principale de     =
+%=                votre travail de fin de cycle suivant le          =
+%=                modèle de l'Universite Don Bosco de Lubumbashi    =
+%=                (UDBL)                                            =
+%====================================================================
+\documentclass[12pt, a4paper]{report}
+\usepackage{fancyhdr}                      % Pour definir les entetes et les pieds de page
+\usepackage[T1]{fontenc}                   % Encodage T1 (adapté au français)
+\usepackage{lmodern}                       % Caractères plus lisibles
+\usepackage[french,english]{babel}         % Réglages linguistiques (avec french)
+\usepackage{zref-perpage}                  % Pour reinitialiser le compteur des pages
+\usepackage{graphicx}                      % Pour le graphic
+\usepackage{url}                           % Pour gerer l'url
+\usepackage[utf8]{inputenc}                          
+\usepackage{ragged2e}
+\usepackage{tabularx}
+\usepackage[toc,page]{appendix}
+%\usepackage[nottoc]{tocbibind}
+\usepackage{natbib}
+\usepackage{microtype} % makes pdf look better
+\usepackage[caption=false]{subfig}
+\usepackage{acronym}
+
+\usepackage[left=35mm, top=35mm, right=25mm, bottom=25mm]{geometry} % Bordure des pages selon le modele de UDBL
+\usepackage{setspace} \renewcommand{\baselinestretch}{1.25}
+\usepackage{titlesec}
+
+\usepackage{listings}
+\usepackage{listingsutf8}
+\usepackage{color}
+\usepackage{pdfpages} % Pour permettre d'inserer des pages des pdf en annexe
+
+
+\setlength{\parskip}{1.5ex plus 0.5ex minus 0.5ex} % Espacement entre les paragraphes
+% \setlength{\parindent}{2.5em}
+
+%%%%%%%%% GESTION DES BLOC POUR CONTENIR DES CODES EN C++
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{
+  language=C++,
+  basicstyle=\ttfamily\footnotesize,
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  stepnumber=1,
+  numbersep=5pt,
+  backgroundcolor=\color{white},
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  frame=single,
+  tabsize=2,
+  captionpos=b,
+  breaklines=true,
+  breakatwhitespace=false,
+  title=\lstname,
+  keywordstyle=\color{dkgreen},
+  commentstyle=\color{gray},
+  stringstyle=\color{blue},
+  escapeinside={\%*}{*)},
+  morekeywords={typename, class, template, constexpr, auto}
+}
+
+\usepackage{amsmath}
+
+% ============================================ DESIGN DES SECTIONS / SOUS SECTION et SOUS SOUS SECTION ===========================================================
+
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+\titleformat % design des titres des sections
+{\section}
+[block]
+{\normalsize\bfseries}
+{\thesection~.}
+{\baselineskip}
+{}
+[]
+
+% ==============================================================================================================================
+
+\titleformat % design des titres des sous-sections
+{\subsection}
+[block]
+{\normalfont\bfseries}
+{\thesubsection~.}
+{\baselineskip}
+{}
+[]
+
+% ======================================================================================================================
+\titleformat % design des titres des sous-sous-sections
+{\subsubsection}
+[block]
+{\itshape\normalsize\bfseries}
+{\normalfont\bfseries \thesubsubsection~.}
+{\baselineskip}
+{}
+[]
+%=============================================== FIN DU PARAMETRAGE DES SECTIONS ===========================================
+
+%=============================================== DESIGN DES CHAPITRES ======================================================
+% Des redéfinitions des chapitres
+\makeatletter
+\def\@makechapterhead#1{%
+    
+    \vspace*{0.5\p@}%
+    {
+        \parindent \z@ \raggedright \normalfont
+        \interlinepenalty\@M
+        \vskip 2\p@
+        \rule{1\linewidth}{1.5pt} \vskip 2\p@
+        \ifnum \c@secnumdepth >\m@ne % Les chapitre numerotés
+            \bfseries CHAP \thechapter\quad
+        \fi
+        \centering \bfseries #1\par\nobreak 
+        \vskip 1\p@
+        \rule{1\linewidth}{1pt}
+        \vskip 20\p@
+            
+    }
+}
+
+\def\@makeschapterhead#1{%
+    \begin{center}
+        \vspace*{0.5\p@}%
+        {\parindent \z@ \raggedright
+            \normalfont
+            \interlinepenalty\@M % Les chapitres non numérotés
+            \vskip 2\p@
+            \rule{1\linewidth}{1.5pt} \vskip 2\p@
+            \centering \bfseries  #1\par\nobreak
+            \vskip 1\p@
+            \rule{1\linewidth}{1pt}
+            \vskip 20\p@
+        }
+    \end{center}
+}
+\makeatother
+
+% =========================================== FIN CONFIGURATION DES CHAPITRES ===============================================
+%============================================ REDEFINITONS DE CERTAINES COMMANDES SUPLEMENTAIRES ============================
+% Redefinition de certaines commandes
+% \addto\captionsenglish{
+% \renewcommand{\chaptername}{Chapitre}
+% }
+\addto\captionsenglish{
+\renewcommand{\listfigurename}{LISTE DES FIGURES}
+}
+\addto\captionsenglish{
+\renewcommand{\listtablename}{LISTE DES TABLEAUX}
+}
+\addto\captionsenglish{
+\renewcommand{\contentsname}{TABLE DES MATIÈRES}
+}
+\addto\captionsenglish{
+\renewcommand{\contentsname}{TABLE DES MATIÈRES}
+}
+
+\addto\captionsenglish{
+\renewcommand{\bibname}{BIBLIOGRAPHIE}
+}
+
+
+% Page de garde
+\input{latex_page_garde/page_garde}
+
+\begin{document}
+    %% ======================= INSERER LE TITRE DE VOTRE TRAVAIL ICI ================================
+    \pagedegardeudbl{TITRE DE VOTRE TRAVAIL}
+    {MUTOKE MUSULE André}
+    {Msc Ir KAPULULA Dubois}
+    {Msc Ir KABALA Larry}
+    {Réseaux et Télécommunications}
+    \newpage
+
+    % ===================================================== Definition des entete et pied de page ===================================================
+
+    % ============== Augmenter la hauteur de l'en-tête si nécessaire
+    \setlength{\headheight}{13pt}
+    \setlength{\headwidth}{15cm}
+
+    \pagestyle{fancy}
+    \lhead{}
+    \chead{}
+    \rhead{Page | \thepage}
+    \renewcommand{\footrulewidth}{1pt}
+    \lfoot{TFC-UDBL-TLC}
+    \cfoot{}
+    \rfoot{2025}
+% ================================================== FIN DE LA DEFINITON DES ENTETES ET PIED DE PAGE ==============================================
+
+    % Document proprement dit
+    \cleardoublepage % Pour s'assurer que la numérotation reprend à la page suivante
+    \pagenumbering{Roman}
+    \setcounter{tocdepth}{3}
+    \setcounter{chapter}{-1}
+
+    
+
+    \input{epigraphe/epigraphe.tex}
+    
+    \cleardoublepage % Pour s'assurer que la numérotation reprend à la page suivante
+
+    \input{dedicace/dedicace.tex}
+    \cleardoublepage % Pour s'assurer que la numérotation reprend à la page suivante
+
+    \input{remerciement/remerciement.tex}
+    \cleardoublepage % Pour s'assurer que la numérotation reprend à la page suivante
+
+    \addcontentsline{toc}{chapter}{LISTE DES FIGURES}
+    \listoffigures
+    \cleardoublepage % Pour s'assurer que la numérotation reprend à la page suivante
+
+    \addcontentsline{toc}{chapter}{LISTE DES TABLEAUX}
+    \listoftables
+    \cleardoublepage % Pour s'assurer que la numérotation reprend à la page suivante
+
+    \input{acronymes/acronymes.tex}
+
+    \addcontentsline{toc}{chapter}{TABLE DES MATIÈRES}
+    \tableofcontents
+    \cleardoublepage % Pour s'assurer que la numérotation reprend à la page suivante
+
+    \input{avantpropos/avantpropos.tex}
+
+    \cleardoublepage % Pour s'assurer que la numérotation reprend à la page suivante
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
+
+    %================================================ CHAPITRE 0 ===============================================
+    \input{introduction/introduction.tex}
+
+    %================================================ CHAPITRE 1 ===============================================
+    \input{chap1/chap1.tex}
+
+    %================================================ CHAPITRE 2 ===============================================
+    \input{chap2/chap2.tex}
+
+    %================================================ CHAPITRE 3 ===============================================
+    \input{chap3/chap3.tex}
+
+    
+    %================================================ CHAPITRE 3 ===============================================
+    \input{chap4/chap4.tex}
+
+
+     %================================================ CHAPITRE 3 ===============================================
+    \input{conclusion/conclusion.tex}
+
+    %=============================================== BIBLIOGRAPHIE ===============================================
+    \cleardoublepage % Pour s'assurer que la numérotation reprend à la page suivante
+    
+    \nocite{*}
+    \addcontentsline{toc}{chapter}{BIBLIOGRAPHIE}
+    \bibliographystyle{plain}
+    \bibliography{myBib}
+
+    \newpage
+
+    \appendix
+    \addcontentsline{toc}{chapter}{ANNEXES}
+    \chapter*{ANNEXES}
+
+    % \includepdf[pages={12, 13}, scale=0.8]{Décision-065-2019-portant-modification-de-la-decision-024_2006-relative-à-la-directive-fixant-le-régime-dhomologation-des-équipements-et-installations-des-télécommunications.pdf}  % Insertion de toutes les pages
+
+    \includepdf[pages=-]{formulaire_demande_homologation.pdf}  % Insertion de toutes les pages
+
+    \includepdf[pages=-]{formulaire_client.pdf}  % Insertion de toutes les pages
+    
+    \includepdf[pages=-]{formulaireInform.pdf}  % Insertion de toutes les pages
+\end{document}
+
+
+
+

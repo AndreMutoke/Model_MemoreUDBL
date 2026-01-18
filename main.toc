@@ -1,0 +1,121 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{ÉPIGRAPHE}{I}{}%
+\contentsline {chapter}{DÉDICACE}{II}{}%
+\contentsline {chapter}{REMERCIEMENT}{III}{}%
+\contentsline {chapter}{LISTE DES FIGURES}{IV}{}%
+\contentsline {chapter}{LISTE DES TABLEAUX}{VI}{}%
+\contentsline {chapter}{LISTE D'ACRONYMES}{VII}{}%
+\contentsline {chapter}{TABLE DES MATIÈRES}{VIII}{}%
+\contentsline {chapter}{AVANT PROPOS}{XIII}{}%
+\contentsline {paragraph}{}{XIII}{}%
+\contentsline {chapter}{\numberline {0}INTRODUCTION GÉNÉRALE}{1}{}%
+\contentsline {section}{\numberline {0.1}Contexte du travail}{1}{}%
+\contentsline {section}{\numberline {0.2}Problématique}{1}{}%
+\contentsline {paragraph}{}{1}{}%
+\contentsline {section}{\numberline {0.3}Hypothèse}{1}{}%
+\contentsline {paragraph}{}{1}{}%
+\contentsline {section}{\numberline {0.4}Choix et intérêt du sujet}{1}{}%
+\contentsline {paragraph}{}{1}{}%
+\contentsline {section}{\numberline {0.5}Méthodologies et techniques}{2}{}%
+\contentsline {subsection}{\numberline {0.5.1}Méthodologies}{2}{}%
+\contentsline {paragraph}{}{2}{}%
+\contentsline {subsection}{\numberline {0.5.2}Techniques}{2}{}%
+\contentsline {section}{\numberline {0.6}État de l'art}{3}{}%
+\contentsline {paragraph}{}{3}{}%
+\contentsline {section}{\numberline {0.7}Délimitation du travail}{3}{}%
+\contentsline {section}{\numberline {0.8}Subdivision du travail}{4}{}%
+\contentsline {section}{\numberline {0.9}Logiciels et équipements utilisés}{4}{}%
+\contentsline {chapter}{\numberline {1}ÉTUDE DE L'EXISTANT ET GÉNÉRALITÉ DES CONCEPTS}{5}{}%
+\contentsline {section}{\numberline {1.1}Introduction partielle}{5}{}%
+\contentsline {paragraph}{}{5}{}%
+\contentsline {section}{\numberline {1.2}Étude de l’existant \& Généralité des concepts}{5}{}%
+\contentsline {subsection}{\numberline {1.2.1}Présentation de l’entreprise XXXXX}{5}{}%
+\contentsline {subsubsection}{Cadre historique}{5}{}%
+\contentsline {paragraph}{}{5}{}%
+\contentsline {subsubsection}{Cadre géographique}{5}{}%
+\contentsline {paragraph}{}{5}{}%
+\contentsline {subsubsection}{Cadre organisationnel}{5}{}%
+\contentsline {paragraph}{}{5}{}%
+\contentsline {subsection}{\numberline {1.2.2}Étude de l'existant}{5}{}%
+\contentsline {subsection}{\numberline {1.2.3}Critique de l'existant}{6}{}%
+\contentsline {paragraph}{}{6}{}%
+\contentsline {subsubsection}{Points forts}{6}{}%
+\contentsline {paragraph}{}{6}{}%
+\contentsline {subsubsection}{Points faibles}{6}{}%
+\contentsline {paragraph}{}{6}{}%
+\contentsline {subsection}{\numberline {1.2.4}Besoins fonctionnels \& non fonctionnels}{6}{}%
+\contentsline {subsubsection}{Besoins fonctionnels}{6}{}%
+\contentsline {paragraph}{}{6}{}%
+\contentsline {subsubsection}{Besoins non fonctionnels}{6}{}%
+\contentsline {paragraph}{}{6}{}%
+\contentsline {section}{\numberline {1.3}Conclusion partielle}{6}{}%
+\contentsline {chapter}{\numberline {2}CONCEPTION DE L’OUTIL D’HOMOLOGATION DES SYSTÈMES RADARS DES SITES MINIERS }{7}{}%
+\contentsline {section}{\numberline {2.1}Introduction partielle}{7}{}%
+\contentsline {section}{\numberline {2.2}Conception générale}{7}{}%
+\contentsline {paragraph}{}{7}{}%
+\contentsline {subsection}{\numberline {2.2.1}Le V-Shape Model}{8}{}%
+\contentsline {paragraph}{}{8}{}%
+\contentsline {subsection}{\numberline {2.2.2}L'approche \ac {MBD}}{8}{}%
+\contentsline {paragraph}{}{8}{}%
+\contentsline {subsection}{\numberline {2.2.3}Analyse des besoins}{8}{}%
+\contentsline {paragraph}{}{8}{}%
+\contentsline {subsubsection}{Définition des besoins fonctionnels}{8}{}%
+\contentsline {paragraph}{}{8}{}%
+\contentsline {subsubsection}{Définition des besoins non fonctionnels}{9}{}%
+\contentsline {paragraph}{}{9}{}%
+\contentsline {subsection}{\numberline {2.2.4}Analyse des contraintes à l'homologation des équipements RA\-DAR pour entreprises minière}{10}{}%
+\contentsline {paragraph}{}{10}{}%
+\contentsline {subsubsection}{Contrainte technique}{10}{}%
+\contentsline {subsubsection}{Contraintes juridiques et politique}{10}{}%
+\contentsline {paragraph}{}{10}{}%
+\contentsline {subsubsection}{Contrainte Budgétaire}{10}{}%
+\contentsline {paragraph}{}{10}{}%
+\contentsline {subsubsection}{Contrainte d'exploitation}{10}{}%
+\contentsline {paragraph}{}{10}{}%
+\contentsline {subsection}{\numberline {2.2.5}Diagramme des exigences du système}{10}{}%
+\contentsline {paragraph}{}{10}{}%
+\contentsline {section}{\numberline {2.3}Conception détaillée}{11}{}%
+\contentsline {subsection}{\numberline {2.3.1}Conception logique du système : Cas d'utilisation}{11}{}%
+\contentsline {paragraph}{}{11}{}%
+\contentsline {subsubsection}{Acteurs}{11}{}%
+\contentsline {paragraph}{}{11}{}%
+\contentsline {subsubsection}{Cas d'utilisations}{12}{}%
+\contentsline {paragraph}{}{12}{}%
+\contentsline {subsubsection}{Diagramme des cas d'utilisations}{15}{}%
+\contentsline {subsection}{\numberline {2.3.2}Conception logique du système : Activité}{15}{}%
+\contentsline {subsection}{\numberline {2.3.3}Interface Homme Machine}{17}{}%
+\contentsline {section}{\numberline {2.4}Conclusion partielle}{22}{}%
+\contentsline {chapter}{\numberline {3}IMPLÉMENTATION DU SYSTÈME}{24}{}%
+\contentsline {section}{\numberline {3.1}Introduction partielle}{24}{}%
+\contentsline {section}{\numberline {3.2}Matériels d'essais}{24}{}%
+\contentsline {section}{\numberline {3.3}Description de l'installation}{25}{}%
+\contentsline {subsection}{\numberline {3.3.1}La chambre anéchoïque}{25}{}%
+\contentsline {subsection}{\numberline {3.3.2}Types de chambre anéchoïque}{25}{}%
+\contentsline {subsection}{\numberline {3.3.3}Dimensionnement de la chambre anéchoïque}{26}{}%
+\contentsline {subsubsection}{Définition des dièdres absorbants}{26}{}%
+\contentsline {subsubsection}{chambre d'essai de la compatibilité électromagnétique CEM}{29}{}%
+\contentsline {subsection}{\numberline {3.3.4}Analyseur des réseaux vectoriels}{29}{}%
+\contentsline {subsubsection}{Récepteur des signaux RF}{31}{}%
+\contentsline {subsubsection}{Transposition des fréquences}{32}{}%
+\contentsline {subsubsection}{Réception en mode puissance-mètre}{35}{}%
+\contentsline {subsection}{\numberline {3.3.5}Application de l'homologation (partie logiciel)}{38}{}%
+\contentsline {section}{\numberline {3.4}Conclusion partielle}{43}{}%
+\contentsline {chapter}{\numberline {4}TESTS \& INTERPRÉTATION DES RÉSULTATS DU SYSTÈME}{45}{}%
+\contentsline {section}{\numberline {4.1}Introduction partielle}{45}{}%
+\contentsline {section}{\numberline {4.2}Test d'homologation}{45}{}%
+\contentsline {section}{\numberline {4.3}Interprétation du diagramme de test CEM}{47}{}%
+\contentsline {subsubsection}{Types de mesures}{47}{}%
+\contentsline {subsubsection}{Sources potentielles d'interférences}{48}{}%
+\contentsline {subsubsection}{Niveaux d'émission de l'équipement}{49}{}%
+\contentsline {subsection}{\numberline {4.3.1}Analyse des niveaux d'émission}{49}{}%
+\contentsline {section}{\numberline {4.4}Rapport d'analyse}{50}{}%
+\contentsline {section}{\numberline {4.5}Aspect Budgétaire}{52}{}%
+\contentsline {subsection}{\numberline {4.5.1}Coûts Initiaux et d'Investissement (Infrastructure et Équipement)}{52}{}%
+\contentsline {subsection}{\numberline {4.5.2}Coûts des Licences Logicielles}{52}{}%
+\contentsline {subsection}{\numberline {4.5.3}Coûts de Formation et de Compétence}{53}{}%
+\contentsline {subsection}{\numberline {4.5.4}Coûts Opérationnels et de Maintenance Annuels}{53}{}%
+\contentsline {subsection}{\numberline {4.5.5}Récapitulatif Global (Estimations Larges en USD)}{54}{}%
+\contentsline {section}{\numberline {4.6}Conclusion partielle}{54}{}%
+\contentsline {chapter}{CONCLUSION GENERALE}{54}{}%
+\contentsline {chapter}{BIBLIOGRAPHIE}{59}{}%
+\contentsline {chapter}{ANNEXES}{59}{}%

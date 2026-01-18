@@ -1,0 +1,504 @@
+    %================================================ CHAPITRE 2 ===============================================
+\chapter{CONCEPTION DE L’OUTIL}
+\section{Introduction partielle}
+
+Ce chapitre se consacre à la conception détaillée de notre outil d'aide à l'homologation, s'appuyant sur les besoins et les critiques 
+identifiés dans l'étude de l'existant. Nous y décrirons les méthodologies de conception adoptées, notamment le modèle en V et l'approche Model 
+Based Design (MBD), avant de traduire les exigences en une architecture logique et fonctionnelle, incluant les diagrammes d'exigences, de cas 
+d'utilisation, d'activités et l'interface homme-machine qui sera notre \ac{GUI}.
+    
+\section{Conception générale}
+\paragraph{}
+Dans un processus classique de conception des systèmes ; entre 
+autres le processus \ac{LRU}; les ingénieurs recueillent des 
+spécifications à partir de plusieurs sources et les combinent 
+afin d'élaborer un cahier des charges sur papier, qui aidera  
+à produire une 
+conception détaillée. Une série des concepts différents seront 
+analysées par le biais de prototypes des simulateurs ou des 
+maquettes,
+la conformité à ces spécifications sera aussi contrôlée, 
+apportant ainsi les modifications appropriées\cite{lru_mdel}. 
+Après avoir mis 
+au point une conception acceptable, les tests 
+de vérification et de validation seront exécutés, puis de 
+conformité si le produit doit respecter certaines normes 
+spécifiques\cite{lru_mdel}. 
+           
+Comme les tests se déroulent à la fin d’un processus en plusieurs 
+étapes faisant appel à des équipes différentes, les erreurs 
+introduites en 
+phase de conception ne sont souvent détectées que bien plus 
+tard\cite{lru_mdel}. 
+
+Leur correction onéreuse oblige la direction à prendre 
+des décisions budgétaires 
+difficiles\cite{lru_mdel}.  
+
+Pour tenir compte de la contrainte temporel, nous allons utiliser 
+le modèle de conception en V et le modèle de conception \ac{MBD}. 
+
+    \subsection{Le V-Shape Model}
+            \paragraph{}
+        Le cycle en V (V model ou  V-Shape model  en anglais) est un modèle d'organisation des activités d'un projet qui se caractérise par un flux 
+        d'activité descendant qui détaille le produit jusqu'à sa réalisation, et un flux ascendant, qui assemble le produit en vérifiant sa qualité. 
+        Ce modèle est issu du modèle en cascade dont il reprend l'approche séquentielle et linéaire de phases\cite{model_v}.
+
+    \subsection{L'approche \ac{MBD}}
+            \paragraph{}
+        Le Model-Based Design (MBD) est une méthode de gestion de projet qui permet d'améliorer le développement d'un système. Alors qu'un développement 
+        classique est basé sur le cycle en V, l'approche MBD consiste à modéliser le système au plus tôt pour tester les choix stratégiques \& 
+        techniques (Check) dès le design du système (\emph{Plan}) tout en structurant et en enrichissant la communication entre les différentes équipes 
+        chargées du développement. Le coût de la modélisation est compensé par le gain en temps de développement, la convergence plus rapide de la 
+        solution et la réutilisation des modèles créés (parfois d'un facteur 101)\cite{model_based_definition}.
+
+    \subsection{Analyse des besoins}
+    \paragraph{}
+        L'analyse des besoins se traduit par la réalisation du cahier de charge fonctionnel. Un cahier des charges fonctionnel est un document rassemblant 
+        l'ensemble des éléments liés à un projet. Le besoin, les prestations attendues et les objectifs y sont détaillés, ainsi que les différentes 
+        contraintes (techniques, juridiques ou budgétaires)\cite{SysML}.
+
+        Dans le but de développer un outil qui aidera à réaliser l'homologation des équipements de télécommunications, plus particulièrement les équipements 
+    RADAR utilisés par les entreprises minières, tout en se focalisant sur le point faible de l'évolution des technologies comme point faible à améliorer, 
+    nous devons faire ressortir les différents besoins de notre système.
+        \subsubsection{Définition des besoins fonctionnels}
+        \paragraph{}
+            Les besoins fonctionnels sont les exigences essentielles qui décrivent ce que le système doit faire, comme les fonctionnalités ou service à 
+            fournir. Après études, nous pouvons énumérer les besoins suivants
+            \begin{enumerate}
+                \item Le système doit tester les performances techniques :Ici, il sera question de :
+                \begin{itemize}
+                    \item  la portée, précision, résolution angulaire, vitesse de rafraîchissement, etc.
+                    \item  Immunité aux brouillages et aux interférences.
+                    \item  Fiabilité et disponibilité.
+                \end{itemize}
+
+                \item Le système doit offrir la possibilité de soumettre des demandes d'homologation en ligne.
+                \item Le système doit permettre la gestion des documents nécessaires à l'homologation
+                      
+                \item Le système doit tester la sécurité : ici, il s’agira de :
+                \begin{itemize}
+                    \item Conformité aux normes de sécurité (émissions électromagnétiques, pro\-tection contre les interférences, etc.).
+                    \item Absence de risques pour les personnes et les biens.
+                \end{itemize}
+
+                \item Le système doit vérifier la \ac{CEM} : ici, il s’agira de veiller au respect des normes CEM pour éviter 
+                les interférences avec d'autres systèmes. Pour notre travail, nous avons 
+                opté pour la norme \ac{CISPR}, plus précisément la norme CISPR 25.
+                
+
+                \item Le système doit s'assurer de la sécurité de fonctionnement : ici, il s’agira de veiller aux mécanismes de sécurité pour prévenir les accidents et 
+                les dysfonction\-nements du système.
+
+
+            \end{enumerate}
+            \subsubsection{Définition des besoins non fonctionnels}
+            \paragraph{}
+            Les besoins non fonctionnels concernent les critères de performance, la sécurité ou l'ergonomie du système\cite{SysML}. Nous pouvons citer :
+                \begin{itemize}
+                    \item Le système doit être conforme aux normes de sécurité des données (Norme IEEE)
+                    \item Le système doit comporter une interface intuitive et accessible
+                    \item Les tests devront se réaliser dans une chambre anéchoïque.
+                \end{itemize}
+            % \subsection{Difficultés d'homologuer les équipements telecoms }
+            %     \begin{itemize}
+            %         \item \textbf{Manque d'un milieu adequat pour effectuer les mesures} : Effectivement l'ARPTC 
+            %     \end{itemize}
+
+    \subsection{Analyse des contraintes à l'homologation des équipements RA\-DAR pour entreprises minière}
+    \paragraph{}
+    Les contraintes sont des fonctions qui impliquent des limitations quant à la conception d'un système. De ce fait, l'analyse des contraintes consiste à identifier
+    les limitations ou restrictions qui pourraient affecter le projet. Nous devons prendre en compte ces contraintes pour mieux planifier le travail.
+    \subsubsection{Contrainte technique} 
+        Les contraintes techniques sont les contraintes liées à la technologie. Il nous faudra s'assurer de la compatibilité entre les parties 
+        électroniques, électriques et informati\-ques du système.
+
+    \subsubsection{Contraintes juridiques et politique}
+    \paragraph{}
+        Les contraintes juridiques sont les restrictions imposées par l'État congolais. Pour un bon fonctionnement, il faut s’acquitter des droits et des devoirs 
+        auprès de l’autorité de régulation des postes et des télécommunications du Congo ARPTC et du ministère des télécommunications et des nouvelles 
+        technologies de l’information et de la com\-munication PT\&NTIC\cite{travail_rdc}. 
+        Les droits et les obligations, c’est le fait de s’acquitter en payant les titres 
+        d’exploitation et être en ordre fiscal.
+
+    \subsubsection{Contrainte Budgétaire}
+    \paragraph{}
+        Tout projet, aussi grand soit-il, possède des limites financière. Les contraintes budgé\-taires dictent combien on peut dépenser.
+    % \subsection{Contraintes temporelles}
+
+    % \subsection{Contrainte due aux ressources humaines}
+
+    \subsubsection{Contrainte d'exploitation}
+    \paragraph{}
+        Les contraintes d'exploitation sont liées à l'utilisation du système. Elles englobent la maintenance, la fiabilité et la facilité d'utilisation du système.
+
+    \subsection{Diagramme des exigences du système}
+    \paragraph{}
+        Une fois les exigences énumérées, le diagramme des exigences présenté dans la figure \ref{fig:figure3} vient résumer ce qui a été dit ci-haut.
+        \begin{figure}[ht]
+            \centering
+            \includegraphics[scale=0.34]{mesDiagrammes/exigences/DiagrammeExigence}
+            \caption{Diagramme des exigences}
+            \label{fig:figure3}
+        \end{figure}
+    % \subsection{Définitions des activités générales de notre futur système}
+    \section{Conception détaillée}
+    \subsection{Conception logique du système : Cas d'utilisation}
+\paragraph{}
+    Après avoir conçu le diagramme des exigences résumant les spécifications fonctionnelles du système, nous allons maintenant passer à la 
+    conception logique. Ici, il sera question de définir premièrement les acteurs intervenant dans le système. Un diagramme de cas d'utilisation 
+    capture le comportement d'un système, d'un sous-système, tel qu'un utilisateur extérieur le voit. Il scinde la fonctionnalité du système en 
+    unités cohérentes, les cas d'utilisation, ayant un sens pour les acteurs. 
+    
+    Les cas d'utilisation permettent d'exprimer le besoin des utilisateurs d'un système, ils sont donc une vision orientée utilisateur de ce 
+    besoin au contraire d'une vision informatique.
+    
+    \subsubsection{Acteurs}
+\paragraph{}
+    Pour notre système, nous aurons comme acteurs :
+    \begin{itemize}
+        \item Utilisateur : L'utilisateur est un humain, qui va solliciter les différentes fonctionnalités du système. L'utilisateur généralise deux sous-catégories :
+        \begin{itemize}
+            \item L'autorité de Régulation
+            \item L'entreprise cherchant homologation de ses équipements RADAR
+        \end{itemize}
+        \item Le système lui-même : Il intègre les cas d'utilisations favorisant l'interaction action avec l'utilisateur
+        \item L'équipement à homologuer.
+    \end{itemize}
+
+    \subsubsection{Cas d'utilisations}
+    \paragraph{}
+    Un cas d'utilisation décrit une fonction qu'un système exécute pour atteindre l'objectif de l'utilisateur. Un cas d'utilisation doit renvoyer un résultat observable qui est utile pour l'utilisateur du système.
+
+    Il s'agira principalement pour notre système de :
+    \begin{itemize}
+        \item Homologuer l'équipement : L'homologation est la compilation générale survenue lors des différents tests de conformité
+            \begin{itemize}
+                \item Objectif : Réaliser l'homologation de l'équipement RADAR
+                \item Acteur principal : L'utilisateur
+                \item Acteur secondaire :  Le système, l'équipement RADAR
+                \item Préconditions : \begin{itemize}
+                                        \item Avoir au préalable soumis une demande d'homologation
+                                        \item Avoir Placer l'équipement à homologuer dans une chambre anéchoïque
+                                    \end{itemize}
+                \item Scénario : \begin{itemize}
+                                    \item Ouvrir l'application
+                                    \item Lancer l'homologation
+                                    \item Insérer les informations
+                                \end{itemize}
+                \item Alternatif : Ne pas homologuer
+                \item Exception : Ne pas homologuer si la base des données est saturée.
+                \item Postcondition : Générer le document d'homologation.
+            \end{itemize}
+        \item Tester la conformité Radioélectrique : Tout en se basant sur l'arrêté ministériel ainsi que sur les réglementations techniques 
+        spécifiées par l'UIT et IEC, il sera question ici de vérifier les performances techniques du RADAR testé. En d'autres termes, il 
+        s'agit de s'assurer que l'appareil :
+            \begin{itemize}
+                \item Utilise les fréquences autorisées et dans les limites de puissance définies.
+                \item N'interfère pas avec d'autres services radio
+            \end{itemize}
+            \begin{itemize}
+                \item Objectif : Tester la conformité Radioélectrique
+                \item Acteur principal : L'utilisateur
+                \item Acteur secondaire :  Le système, l'équipement RADAR
+                \item Préconditions : \begin{itemize}
+                                        % \item Avoir au prealable soumis une demande d'homologation
+                                        \item Avoir Placer l'équipement à homologuer dans une chambre anéchoïque
+                                    \end{itemize}
+                \item Scénario : \begin{itemize}
+                                    \item Ouvrir l'application
+                                    \item Lancer l'homologation ou tester les performances radio
+                                    \item Tester la PIRE
+                                    \item Tester la fréquence
+                                    \item Tester la portée
+                                    \item Tester le diagramme de rayonnement
+                                \end{itemize}
+                \item Alternatif : Ne pas réaliser le teste
+                \item Exception : Réessayer plus tard.
+                \item Postcondition : Passer au test de compatibilité, générer un rapport du test.
+            \end{itemize}
+
+        \item Tester la compatibilité Électromagnétique : Ce dernier vise à vérifier qu'un appareil électronique ne perturbe pas son environnement électromagnétique et qu'il peut fonctionner correctement dans cet environnement sans subir d'interférences.
+        \begin{itemize}
+            \item Objectif : Tester la compatibilité électromagnétique
+            \item Acteur principal : L'utilisateur
+            \item Acteur secondaire :  Le système, l'équipement RADAR
+            \item Préconditions : \begin{itemize}
+                                    % \item Avoir au prealable soumis une demande d'homologation
+                                    \item Avoir Placer l'équipement à homologuer dans une chambre anéchoïque
+                                \end{itemize}
+            \item Scénario : \begin{itemize}
+                                \item Ouvrir l'application
+                                \item Lancer l'homologation ou tester les performances radio
+                                \item Tester la norme IEC 
+                                \item Tester la performance sur terrain.
+                            \end{itemize}
+            \item Alternatif : Ne pas réaliser le teste
+            \item Exception : Réessayer plus tard.
+            \item Postcondition : Passer au test de sécurité électrique et immunité sanitaire ;  générer un rapport test.
+        \end{itemize}
+        \item Tester la sécurité électrique et immunité sanitaire : visent à s'assurer que ces appareils ne présentent aucun danger pour l'utilisateur ou son environnement. Ils sont essentiels pour garantir la conformité aux normes de sécurité et protéger les personnes contre les risques d'électrocution, d'incendie ou d'autres accidents liés à l'électricité.
+        \begin{itemize}
+            \item Objectif : Tester la compatibilité électromagnétique
+            \item Acteur principal : L'utilisateur
+            \item Acteur secondaire :  Le système, l'équipement RADAR
+            \item Préconditions : \begin{itemize}
+                                    % \item Avoir au prealable soumis une demande d'homologation
+                                    \item Avoir Placer l'équipement à homologuer dans une chambre anéchoïque
+                                \end{itemize}
+            \item Scénario : \begin{itemize}
+                                \item Ouvrir l'application
+                                \item Lancer l'homologation ou tester les performances radio
+                                \item Tester la norme IEC 
+                                \item Tester la performance sur terrain.
+                            \end{itemize}
+            \item Alternatif : Ne pas réaliser le teste
+            \item Exception : Réessayer plus tard.
+            \item Postcondition : Passer au test de sécurité électrique et immunité sanitaire ;   générer un rapport teste.
+        \end{itemize}
+        \item Soumettre demande d'homologation : L'utilisateur, autre que l'autorité de Régulation, devra avoir la possibilité de soumettre la 
+        demande d'homologation et de l'envoyer à qui de droit.
+        \begin{itemize}
+            \item Objectif : Soumettre demande d'homologation
+            \item Acteur principal : L'utilisateur
+            \item Acteur secondaire :  Le système
+            \item Préconditions : ---
+            \item Scénario : Envoyer le mail
+            \item Alternatif : Ne pas soumettre
+            \item Exception : Réessayer plus tard.
+            \item Postcondition : En attente d'une réponse.
+        \end{itemize}
+        
+        \item Générer Document d'homologation : Une fois les différents testes réalisées, un document devra être généré. 
+        \begin{itemize}
+            \item Objectif : Générer le document de l'homologation
+            \item Acteur principal : L'utilisateur
+            \item Acteur secondaire :  Le système
+            \item Préconditions : Avoir déjà réalisé l'homologation
+            \item Scénario : Générer document
+            \item Alternatif : Ne pas générer
+            \item Exception : Réessayer plus tard.
+            \item Postcondition : ---
+        \end{itemize}
+        
+    \end{itemize}
+
+    \subsubsection{Diagramme des cas d'utilisations}
+    Une fois les acteurs ainsi que les cas d'utilisations recensés, nous pouvons résumer le tout à travers le diagramme des cas d'utilisation.
+    \begin{figure}[ht]
+        \centering
+        \includegraphics[scale=0.34]{mesDiagrammes/userCase/Cas_d_utilisation}
+        \caption{Diagramme des cas d'utilisation}
+        \label{fig:figure4}
+    \end{figure}
+
+    \subsection{Conception logique du système : Activité}
+    Le diagramme d'activité permet de vérifier la complétude d'un processus.
+    Dans notre cas, nous allons nous focaliser sur le processus de demande d'homologation ainsi que le processus 
+     général de l'homologation de nos équipements radar. 
+    
+    Suivant le flux de traitement du signal et de la communication, l'activité comprend :
+    
+    \begin{itemize}
+        \item AMPLI LOG (Amplificateur Logarithmique) : C'est la première étape de la chaîne de réception du signal.
+        Il reçoit le "Signal RF" (Radio Fréquence) de l'équipement à tester.
+        Sa fonction est de "Déterminer la puissance du signal" en convertissant le signal RF en une tension proportionnelle au logarithme de la puissance d'entrée. Cela permet de mesurer une large plage de puissances.
+        Le signal traité est ensuite transmis au "Downconverter".
+
+        \item DOWNCONVERTER (Convertisseur Abaisseur de Fréquence) : Ce module est responsable de la "Transposition de fréquence intermédiaire".
+        Il reçoit le signal de l'Ampli Log et un signal d'un "VCO" (Voltage-Controlled Oscillator - Oscillateur Commandé en Tension) pour effectuer un mélange de signaux.
+        L'objectif est de ramener la fréquence du signal RF (qui peut être très élevée, comme les GHz pour les radars) à une "Fréquence intermédiaire" plus basse, plus facile à traiter par les composants numériques.
+        Un "Filtre passe-bas" est appliqué après le mélange pour isoler la composante de basse fréquence (la fréquence intermédiaire) et éliminer les fréquences indésirables.
+
+
+        \item VCO (Oscillateur Commandé en Tension) : Ce couloir représente le module qui "Génère une fréquence de 2.4 GHz".
+        Cette fréquence est utilisée par le Downconverter comme fréquence locale pour le mélange.
+        Le VCO est "Configuré via UART" (Universal Asynchronous Receiver/Transmitter), ce qui signifie que son fonctionnement (notamment la fréquence de sortie) est contrôlé par des commandes série venant de la partie logicielle.
+
+
+        \item CONTRÔLEUR CENTRAL : Ce couloir gère la communication globale entre les différentes parties du système, particulièrement la communication série.
+        Il est responsable de l'Initialisation de la communication UART (9600 bauds)". Cela établit le canal de communication entre le PC et les modules matériels.
+        Il reçoit les "Données de mesure" des modules matériels (après conversion analogique-numérique).
+        Il envoie des "Commandes UART" pour configurer et contrôler les modules matériels, comme le VCO.
+
+
+
+        \item PC (Ordinateur Personnel) : C'est l'interface utilisateur et le centre de traitement des données.
+        Le processus démarre par l'"Envoi de la commande de mesure vers les signaux" depuis le PC.
+        Le PC "Récupère les données" via la communication UART.
+        Il y a une décision "Fréquency mode" :
+        \begin{itemize}
+            \item  OUI : Si le mode fréquence est activé, une "FFT" (Fast Fourier Transform - Transformée de Fourier Rapide) est appliquée aux données pour analyser le spectre de fréquence du signal.
+            \item NON : Si ce n'est pas le mode fréquence, le traitement continue.
+        \end{itemize}
+            Le PC est responsable de l'Affichage des signaux" sur une interface graphique, permettant à l'utilisateur de visualiser les résultats des mesures.
+        Le processus se termine (cercle noir avec un contour rouge).
+    \end{itemize}
+
+L'utilisateur lance une commande de mesure depuis le PC.
+Cette commande est transmise via UART pour initialiser la communication et configurer le VCO pour générer la fréquence nécessaire.
+Le signal RF de l'équipement testé est d'abord amplifié de manière logarithmique pour mesurer sa puissance.
+Ensuite, le signal est envoyé au Downconverter, qui utilise la fréquence du VCO pour transposer le signal RF vers une fréquence intermédiaire plus basse.
+Les données de mesure sont ensuite envoyées du module de communication vers le PC.
+Sur le PC, les données sont traitées : une FFT peut être appliquée si le mode fréquence est sélectionné, puis les résultats sont affichés graphiquement.
+    \begin{figure}[ht]
+        \centering
+        \includegraphics[scale=0.4]{mesDiagrammes/activite/activite1.jpg}
+        \caption{Diagramme d'activité du processus de demande d'homologation}
+        \label{fig:figure5}
+    \end{figure}
+
+    La figure \ref{fig:figure5} nous présente le processus de demande d'homologation, tandis
+que la figure \ref{fig:figure501}, nous présente le processus de mesure pour arriver
+à homologuer les systèmes radar.
+
+\begin{figure}[!h]
+        \centering
+        \includegraphics[scale=0.45]{mesDiagrammes/activite/ActivityHomologationmytest.png}
+        \caption{Diagramme d'activité du processus d'homologation}
+        \label{fig:figure501}
+    \end{figure}
+
+\subsection{Interface Homme Machine}
+Partant de l'analyse des besoins, nous allons Réaliser un logiciel dont sa fonction principale est de faciliter l'homologation. De ce fait, ce dernier sera réaliser avec
+le framework Qt. 
+\begin{itemize}
+    \item \textbf{Classes principales et leur rôle} : 
+          \begin{enumerate}
+            \item \textbf{KernelSystem} :
+                  \begin{itemize}
+                    \item Role : Gère la logique fondamentale de l'application, les modes de fonctionnement (Powermeter, Fréquence, Temporel) et l'interaction en mode 
+                    console (bien que la partie console soit minimale dans le code actuel).
+                    \item Membre clés : 
+                        \begin{itemize}
+                            \item $m\_myModeSys$ : MODE (énumération) :Mode de fonctionnement actuel.
+                            \item $m\_enableConsolePrinting$: bool : Active/désactive l'impression console.
+                            \item $m\_choice$: int : Choix de l'utilisateur en console.
+                            \item $bufferSerialData$: std::stringstream* Buffer pour les données série (simplifié).
+                        \end{itemize}
+                    \item Méthodes Clés :
+                        \begin{itemize}
+                            \item KernelSystem(): Constructeur.
+                            \item runningSystem(): Exécute la logique principale.
+                            \item allowCLPrint(bool cmd): Active/désactive l'impression console.
+                            \item changeMode(int mode): Change le mode de fonctionnement.
+                            \item getMyMode(): Retourne le mode actuel.
+                        \end{itemize}
+                  \end{itemize}
+            \item \textbf{Graphique} :
+                  \begin{itemize}
+                    \item Role : Gère l'affichage des différents types de graphiques (spectre, rayonnement, temporel) en utilisant QtCharts. 
+                    C'est le composant visuel principal pour les données.
+                    \item Hérite de: QChartView
+                    \item Membre clés : 
+                        \begin{itemize}
+                            \item $m\_spectrumChart$: QChart* : Graphique cartésien pour le spectre.
+                            \item $m\_spectrumSeries$: QLineSeries* : Série de données pour le spectre.
+                            \item $m\_spectrumAxisX$, $m\_spectrumAxisY$: QValueAxis* : Axes pour le spectre.
+                            \item $m\_radiationChart$: QPolarChart* : Graphique polaire pour le rayonnement.
+                            \item $m\_radiationSeries$: QLineSeries* : Série de données pour le rayonnement.
+                            \item $m\_radiationRadialAxis$, $m\_radiationAngularAxis$: QValueAxis*, QCategoryAxis* : Axes pour le rayonnement.
+                            \item $m\_spectrumChartT$: QChart* : Graphique cartésien pour le mode temporel.
+                            \item $m\_spectrumSeriesT$: QLineSeries* - Série de données pour le mode temporel.
+                            \item $m\_spectrumAxisXT$, $m\_spectrumAxisYT$: QValueAxis* : Axes pour le mode temporel.
+                            \item $myDataMap$: std::map<double, double> : (Note : à retirer, utilisé pour la simulation interne).
+                            \item $m\_dataTimer$: QTimer* : (Note : à retirer, utilisé pour la simulation interne).
+                            \item $m\_currentX$: double : (Note : à retirer, utilisé pour la simulation interne).
+                        \end{itemize}
+                    \item Méthodes Clés (Slots):
+                        \begin{itemize}
+                            \item updateSpectrumPlot(const QVector<QPointF> data): Met à jour le graphique de spectre.
+                            \item updateRadiationPlot(const QVector<QPointF> data): Met à jour le graphique de rayonnement.
+                            \item updateTemporalPlot(const QVector<QPointF> data): Met à jour le graphique temporel.
+                            \item showSpectrumMode(): Active le mode spectre.
+                            \item showRadiationMode(): Active le mode rayonnement.
+                            \item showTemporalMode(): Active le mode temporel.
+                        \end{itemize}
+                    \item Méthodes Clés (Privées):
+                        \begin{itemize}
+                            \item initSpectrumChart(): Initialise le graphique de spectre.
+                            \item initRadiationChart(): Initialise le graphique de rayonnement.
+                            \item initTemporalChart(): Initialise le graphique temporel.
+                        \end{itemize}
+                    \item Signaux :
+                        \begin{itemize}
+                            \item signalToUpdateRadiationMode()
+                            \item signalToUpdateSpectrumMode()
+                            \item signalToUpdateTemporalMode()
+                        \end{itemize}
+                  \end{itemize}
+            \item \textbf{BarreOutils} : 
+                  \begin{itemize}
+                    \item Role : Représente la barre d'outils principale de l'application, contenant des actions configurables.
+                    \item Hérite de: QToolBar
+                    \item Méthodes clés : 
+                        \begin{itemize}
+                            \item BarreOutils(const QString \&title, QWidget *parent = nullptr): Constructeur.
+                        \end{itemize}
+                    \item Méthodes Clés (Slots privés):
+                        \begin{itemize}
+                            \item onDisplayTriggered(), onMarkerTriggered(), onStimulusTriggered(), onCalibrateTriggered(), onRecallTriggered(), onConfigTriggered(), 
+                            onPauseTriggered(): Gèrent les clics sur les actions et émettent des signaux.
+                        \end{itemize}
+                    \item Signaux :
+                        \begin{itemize}
+                            \item markerOptionTriggered()
+                            \item displayOptionTriggered()
+                            \item stimulusOptionTriggered()
+                            \item calibrateOptionTriggered()
+                            \item configOptionTriggered()
+                        \end{itemize}
+                  \end{itemize}
+            \item \textbf{MainWindow} :
+                  \begin{itemize}
+                    \item Role : La fenêtre principale de l'application. Elle assemble tous les composants de l'interface utilisateur, 
+                    gère les interactions entre eux et contient la logique de simulation des données.
+                    \item Hérite de: QMainWindow
+                    \item Membre clés : 
+                        \begin{itemize}
+                            \item $m\_myKernel$: KernelSystem* : Instance du système Kernel.
+                            \item $dispalyButtonsContainer$, $markerButtonsContainer$, $stimulus\-ButtonsContainer$, $calibrateButtonsContainer$, 
+                            $configButtons\-Container$: QWidget* : Conteneurs pour les boutons spécifiques à chaque section de la barre d'outils.
+                            \item $centralWidget$: QWidget* : Widget central de la fenêtre.
+                            \item $mainLayout$: QHBoxLayout* : Layout principal.
+                            \item $myGraphic$: Graphique* : Instance du graphique.
+                            \item $toolBar$: BarreOutils* : Instance de la barre d'outils.
+                            \item $m\_menuBar$: QMenuBar* : Barre de menu.
+                            \item $fileMenu$, $editMenu$, $viewMenu$, $runMenu$, $settingMenu$, $help\-Menu$: QMenu* : Menus individuels.
+                            \item $m\_simulationTimer$: QTimer* : Timer pour la simulation de données.
+                            \item $m\_displayTemporalFFTInSpectrumMode$: bool : Drapeau pour la FFT du temporel.
+                        \end{itemize}
+                    \item Méthodes Clés (Slots):
+                        \begin{itemize}
+                            \item updateSpectrumPlot(const QVector<QPointF> data): Met à jour le graphique de spectre.
+                            \item updateRadiationPlot(const QVector<QPointF> data): Met à jour le graphique de rayonnement.
+                            \item updateTemporalPlot(const QVector<QPointF> data): Met à jour le graphique temporel.
+                            \item showSpectrumMode(): Active le mode spectre.
+                            \item showRadiationMode(): Active le mode rayonnement.
+                            \item showTemporalMode(): Active le mode temporel.
+                        \end{itemize}
+                    \item Méthodes Clés (Privées):
+                        \begin{itemize}
+                            \item initSpectrumChart(): Initialise le graphique de spectre.
+                            \item initRadiationChart(): Initialise le graphique de rayonnement.
+                            \item initTemporalChart(): Initialise le graphique temporel.
+                        \end{itemize}
+                    \item Signaux :
+                        \begin{itemize}
+                            \item signalToUpdateRadiationMode()
+                            \item signalToUpdateSpectrumMode()
+                            \item signalToUpdateTemporalMode()
+                        \end{itemize}
+                  \end{itemize}
+          \end{enumerate}
+\end{itemize}
+
+\section{Conclusion partielle}
+Ce chapitre a structuré l'élaboration de notre solution en présentant une conception robuste et méthodique. Nous avons défini les besoins 
+fonctionnels et non fonctionnels, analysé les contraintes techniques, juridiques, budgétaires et d'exploitation, et traduit ces éléments en des 
+diagrammes UML clairs et précis (exigences, cas d'utilisation, activités). La proposition d'une interface homme-machine intuitive complète cette 
+phase de conception, fournissant une feuille de route détaillée pour l'implémentation de notre système, étape que nous aborderons dans le prochain 
+chapitre.
+
+
+

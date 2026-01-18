@@ -1,0 +1,695 @@
+% =============================================================================================================================================================================
+% ===============================================================================================================================================================================
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHAPITRE 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{IMPLÉMENTATION DU SYSTÈME}
+\section{Introduction partielle}
+Ce chapitre détaille la mise en œuvre pratique de notre système d'aide à l'homologation des systèmes radars, en s'appuyant sur les 
+spécifications et la conception élaborées précédemment. Nous y explorerons les choix matériels et logiciels fondamentaux, depuis la 
+conception de la chambre anéchoïque jusqu'à la mise en place du circuit d'acquisition des signaux RF et le développement de l'interface 
+logicielle, en passant par les simulations nécessaires à la validation de notre approche.
+
+\section{Matériels d'essais}
+
+Il est impératif, pour mieux réaliser notre homologation d'un 
+équipement non répertorié, de faire usage des matériels suivants :
+\begin{itemize}
+    \item \textbf{Chambre anéchoïque} : Cette dernière sera d'une taille adéquate pour permettre de maintenir un champ uniforme de dimensions suffisantes par rapport 
+    au matériel à l'équipement RADAR. Des absorbants supplémentaires doivent être utilisés pour atténuer les réflexions dans les chambres qui ne sont pas entièrement 
+    revêtues de matériau absorbant\cite{iec6000}. 
+    \item \textbf{Circuit de contrôle pour générer les signaux RF} : Afin de commander l'équipement qui sera mis dans la chambre anéchoïque\cite{iec6000}.
+    \item \textbf{Des sondes de champ isotopique}  dont les amplificateurs de tête et l'opto\-électronique présentent une immunité correcte aux champs à mesurer, et une 
+    liaison à fibre optique avec l'indicateur situé à l'extérieur de la chambre. Il est également possible d'utiliser une liaison correctement filtrée. En effet, ces sondes
+    doivent aussi subir un étalonnage\cite{iec6000}.
+
+    \item \textbf{Matériels associés} : pour enregistrer les niveaux de puissance nécessaires à la valeur du
+    champ requis et pour contrôler la génération de ce signal pour les essais.
+    Des précautions doivent être prises pour que les matériels auxiliaires présentent une
+    immunité suffisante\cite{iec6000}.
+    % L’Annexe I donne une méthode d’étalonnage des sondes de champ E.
+\end{itemize}
+
+\section{Description de l'installation}
+
+\subsection{La chambre anéchoïque}
+L'homologation des équipements RADAR, bien évidement sur la partie qui consiste à tester les performances techniques, définit en effet ; des méthodes d'essais
+pour évaluer l'incidence des rayonnements électromagnétiques sur le matériel concerné\cite{absorbeurTSA}.
+
+La plupart des matériaux électroniques sont, dans une certaine mesure, perturbée par les rayonnements électromagnétiques. Cela est dû au fait qu'il existe plusieurs sources
+de champs électromagnétiques.
+
+Afin de mieux effectuer nos tests, la norme IEC 6000-4-3 prévoit l'installation d'une chambre 
+anéchoïque d'ondes radiofréquences\cite{iec6000}.
+
+\subsection{Types de chambre anéchoïque}
+Il existe trois types de chambre anéchoïque :
+\begin{itemize}
+    \item \textbf{Chambre d'essai de la compatibilité électromagnétique CEM} : Une chambre d'essai CEM est un environnement intérieur spécialisé conçu spécifiquement 
+    pour mesurer avec précision les émissions électromagnétiques produites par les appareils électroniques. Ces chambres anéchoïques sont conçues pour 
+    répondre aux normes et exigences CEM\cite{absorbeurTSA}.
+
+    La compatibilité électromagnétique (CEM) est définie par la capacité d’un appareil électrique/électronique à fonctionner nominalement dans l’environnement 
+    électromagnétique pour lequel il est conçu. Tout fabricant de matériel électronique doit qualifier ou faire qualifier ses matériaux préalablement à leur 
+    mise sur le marché\cite{siepel_notitle_nodate}. 
+    
+    Diverses réglementations fixent les seuils à respecter par les 
+    équipements électroniques. Les essais d’émission et d’immunité 
+    rayonnés 
+    s’effectuent dans ce type de chambre anéchoïque\cite{siepel_notitle_nodate}.
+
+    Différents modèles de chambres, semi ou complètement anéchoïques, répondent aux exigences normatives :
+    \begin{enumerate}
+        \item Pour des tests de préqualification ou de qualification,
+        \item Pour des tests en champ rayonné de forte puissance \ac{HIRF}.
+    \end{enumerate}
+    
+    \item \textbf{Chambres anéchoïques pour les mesures d’antennes} : Pour caractériser une antenne (diagramme de rayonnement par exemple, de type Radio/Télécom, Radar …), 
+    il faut des conditions de transmission reproduisant au mieux l’espace libre. En théorie, il s’agit d’un environnement de mesure en champ lointain, 
+    sans réflexion ni pollution électromagnétique\cite{siepel_notitle_nodate}.
+
+    Ces chambres anéchoïques procurent une \emph{zone tranquille} dans laquelle les conditions de mesures (champ électrique, homogénéité …) sont maîtrisées.
+
+    \item \textbf{Minichambres anéchoïques} : Les minichambres anéchoïques permettent de 
+    tester des petits dispositifs IoT, RF/micro-ondes, cartes électroniques … 
+    Elles représentent la solution idéale pour les tests R\&D, 
+    prototypes ou contrôle de production de ces produits\cite{siepel_notitle_nodate}. 
+    Comme une chambre anéchoïque grandeur nature, 
+    elles créent un environnement électromagnétique répétitif et 
+    isolent l’équipement à tester.
+    
+\end{itemize}
+L'homologation consiste en trois types de test : le test CEM, 
+le test radioélectrique ainsi que le test de sécurité électrique.
+Pour réaliser le test de compatibilité électromagnétique, nous 
+devons concevoir une \textbf{chambre d'essai de la compatibilité 
+électromagnétique CEM}. Pour réaliser 
+le test radioélectrique, nous devons concevoir 
+une \textbf{chambre anéchoïque pour les mesures d’antennes.}\cite{noauthor_specification_2017}
+
+\subsection{Dimensionnement de la chambre anéchoïque}
+
+Une chambre anéchoïque est constituée d’une cage de Faraday couverte d’absorbants électromagnétiques. Ces chambres sont essentielles pour réaliser des essais de compatibilité
+électromagnétique et de mesures d’antennes en conditions de champ libre\cite{noauthor_specification_2017}.
+
+La cage de Faraday isole le matériel sous tests des ondes électromagnétiques polluantes 
+extérieures, les absorbants absorbent les ondes électromagnétiques et empêchent toute réverbération.
+
+Que ce soit au niveau de la chambre d'essais CEM ou de celle pour les mesures d'antennes, il nous faudra définir les propriétés des matériaux devant constituer nos chambres.
+
+\subsubsection{Définition des dièdres absorbants}
+La matière absorbante des ondes devra avoir une forme adéquate pour 
+pouvoir annuler au mieux les réverbérations d'ondes électromagnétiques.\cite{absorbeurTSA} 
+De ce fait la forme la plus appropriée est celle qui se rapproche au dièdre, entre autres, la pyramide.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.8]{mesDiagrammes/img/pyramidAbsorberOrginal.png}
+    \caption{Forme de matériau pyramidal absorbant}
+    \label{fig:figure6}
+\end{figure}
+Ce matériau possède les caractéristiques suivantes :
+\begin{itemize}
+    \item Permittivité relative : $1$
+    \item Perméabilité relative : $1$
+    \item Conductivité électrique : $0.5 S/m$
+\end{itemize} 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.8]{mesDiagrammes/img/pyramidISOsurface.png}
+    \caption{Phénomène d'absorption d'onde électromagnétique}
+    \label{fig:figure7}
+\end{figure}
+Le matériau nécessaire est un absorbeur RF Ohmique. Les paramètres clés d'un absorbeur RF sont les suivantes :
+\begin{itemize}
+    \item \textbf{La Fréquence} : la gamme de fréquences dans laquelle nous souhaitons effectuer des mesures. Dans notre cas, nous travaillons avec des 
+                                    micro-ondes
+    \item \textbf{La réflexivité} : La quantité du signal RF entrant qui sera réfléchie. Plus la réflexivité est faible, plus l'absorption est importante.
+    \item \textbf{Les dimensions} : Afin d'adapter l'absorbeur à la surface de notre chambre anéchoïque.
+    \item \textbf{La forme} : Dans notre cas, nous optons pour une forme pyramidale
+    \item \textbf{Le type de matériau} : définit les paramètres de performance, de qualité et de réflectivité.
+\end{itemize}
+
+Pour sa capacité à être absorbant dans toutes les directions,  nous choisissons le model pyramidal 
+\emph{Coating Microwave Polyurethane Pyramidal Absorbers(TSA-PI series)}
+de l'entreprise TESTUPS qui possède les caractéristiques suivantes\cite{absorbeurTSA} :
+\begin{itemize}
+    \item Fréquence : $8OMhz$ à $40Ghz$; les équipements radars fonctionnent à $1GHz$, donc c'est passable.
+    \item Matériaux : Mousse de polyuréthane; cette dernière possède les propriétés suivantes :
+                        \begin{itemize}
+                            \item Légèreté : Elle est très légère, ce qui facilite l'installation des absorbeurs dans les chambres anéchoïques.
+                            \item Capacité d'absorption : Grâce à sa structure poreuse et à la possibilité d'y incorporer des charges carbonées 
+                            (qui sont les vrais éléments absorbants les ondes électromagnétiques), la mousse de polyuréthane constitue un support 
+                            idéal pour les absorbeurs. Les ondes RF pénètrent la structure de la mousse et sont dissipées sous forme de chaleur, 
+                            réduisant ainsi les réflexions.
+                            \item Facilité de formage : Elle peut être moulée facilement en formes pyramidales, essentielles pour la performance 
+                            des absorbeurs RF.
+                        \end{itemize}
+    \item 
+\end{itemize}
+
+Pour notre cas nous avons choisit le model \emph{Coating Mocrowave Polyurethane Pyrmidal Absorbers TSA-200PI} qui possède les caractéristiques
+suivantes\cite{absorbeurTSA} : 
+    \begin{itemize}
+        \item Matériaux : Polyuréthane
+        \item Température : [$-50^{o} C , 80^{o} C$]
+        \item Bandwidth : $500$MHz - $40$Ghz
+        \item Hauteur : $6.3Kg/m^{2}$
+        \item Poids : $200 mm$
+        \item Réflectivité : [$-15$dB, $-28$dB]
+        \item Size : $500$mm×$500$mm
+        \item Couleur Standard : Bleu
+        \item Espérance de vie : $> 10$ans
+        \item RoHS : 2011/65/EU(EU)2015/863
+    \end{itemize}
+
+\subsubsection{chambre d'essai de la compatibilité électromagnétique CEM}
+Il existe les chambres semi-anéchoïques et totalement anéchoïques. 
+Dans notre cas, pour réaliser les tests de compatibilité RF, 
+nous aurons besoins d'une chambre totalement anéchoïques.
+Cette dernière possédera les dièdres absorbants TSA-PI. 
+Une superficie de $7$x$7m^{2}$ sera amplement suffisante.
+Pour déterminer la quantité de nos dièdres absorbant on féra :
+    \begin{equation}
+        N_{diedre} = \frac{S_{chambre}}{Size_{diedre}} * 2
+    \end{equation}
+    \begin{equation*}
+        N_{diedre} = \frac{14m^{2}}{250000m^{2}} * 2 = 52
+    \end{equation*}
+
+En guise de marge d'erreur nous augmentons $10\%$. ce qui nous donne $58$ TSA-200PI( de $500$mm×$500$mm).
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.8]{mesDiagrammes/img/anechoicChamber.png}
+    \caption{Chambre anéchoïque}
+    \label{fig:figure8}
+\end{figure}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.8]{mesDiagrammes/img/anechoicChamber2.png}
+    \caption{Chambre anéchoïques avec antenne biconnique}
+    \label{fig:figure9}
+\end{figure}
+
+Ceci étant fait, nous pouvons implémenter un \ac{VNA}
+dédié.
+
+\subsection{Analyseur des réseaux vectoriels}
+
+Un VNA est un appareil de mesure couramment utilisé pour\cite{chetouani_developpement_nodate} :
+\begin{itemize}
+    \item Caractériser des composants RF, des câbles et les antennes, 
+    \item Caractériser des matériaux (solides et liquides), 
+    \item Tester la conformité de dispositifs électroniques aux normes réglementaires, comme les tests CEM, 
+    \item Caractériser les dispositifs électro-optique, opto-électrique ou optique, 
+    \item Vérifier le déphasage en fonction de la fréquence : gain d’amplificateur sur une bande passante donnée, 
+    \item Sur un câble, mesurer des paramètres de transmission, de diaphonie et de localiser les défauts, 
+    \item Mesurer la directivité d’une antenne sur une bande de fréquence donnée, 
+    \item Mesurer la transmission, le coefficient de réflexion, le gain, le diagramme de rayonnement, la bande passante et l’impédance tout au long des processus de conception et de production
+\end{itemize}
+
+Le circuit du VNA sera constitué :
+\begin{itemize}
+    \item Une partie logique : Un logiciel qui se chargera d’être une interface homme machine et fournir a son utilisateur différentes fonctionnalités
+    \item Une partie physique (électronique) : Tout ce qui concernant le traitement des signaux, la récolte des données, sera réaliser par cette dernière. 
+\end{itemize}
+
+Nous nous baserons sur le schéma bloc de la 
+figure \ref{fig:figure13} pour réaliser nos système de mesures RF afin de mieux homologuer nos systèmes RADAR
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{mesDiagrammes/MesureRF2.png}
+    \caption{Schéma bloc du système de mesure RF}
+    \label{fig:figure13}
+\end{figure}
+
+\subsubsection{Récepteur des signaux RF}
+
+Le système de réception des signaux RF est divisé en deux grande partie :
+
+\begin{itemize}
+    \item La réception en mode Puissance mètre : Ce mode de réception consiste à traiter le signal reçu et fournir un signal qui sera le logarithme du signal d'entré. Partant de ce signal
+            nous pouvons déterminer le \ac{RSSI} du signal reçu.
+    \item La réception en mode temporel : En mode temporel, ici nous recuperons le signal en bande RF, on le remet en bande de base pour au final être numérisé. et des traitement
+            postérieur seront exécutés par la suite.
+\end{itemize}
+
+Avant de commencer tout processus, il est important de travailler en bande de base, pour 
+les raisons suivantes :
+\begin{itemize}
+    \item les composants devants effectuer le traitement du signal sont limités en terme de 
+fréquence de travail.
+    \item Le microcontrôleur chargé de réaliser le prétraitement des données possède
+          un fréquence limite échantillonnage (40MHz maximum).
+\end{itemize} 
+ Pour y parvenir, nous devons réaliser ce qu'on appel, \textbf{la transposition de fréquence}, 
+en utilisant un mélangeur des signaux downconverter. 
+
+\subsubsection{Transposition des fréquences}
+La transposition de fréquence consiste à transposer un signal dont le spectre est 
+centré sur une fréquence initiale vers une autre fréquence sans altération de la 
+bande passante\cite{roodaki_lavasani_fard_radiation_2024}.
+
+Pour ce faire un nous aurons besoins de élément ci dessous présentés dans la figure \ref{fig:figure90} :
+\begin{itemize}
+    \item Un oscillateur local
+    \item Un multiplieur des signaux(ou comparateur de phase)
+\end{itemize}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{mesDiagrammes/melangeurSignaux.png}
+    \caption{Schéma bloc du mélangeur des signaux}
+    \label{fig:figure90}
+\end{figure}
+
+Au niveau de l'oscillateur local, nous avons un signal $V_{LO}$ comme decrit l'équation
+\ref{eq:equation6}
+
+\begin{equation}
+   V_{LO}(t) = |V_{LO}| sin(\Omega_{e} t + \Phi_{LO}(t)) 
+    \label{eq:equation6}
+\end{equation}
+\begin{equation}
+    V_{s}(t) = K * V_{e}(t) * V_{LO}(t)
+    \label{eq:equation7}
+\end{equation}
+
+Ce qui nous mene a conclure que le signal $V_{s}(t)$ sera donné par l'équation \ref{eq:equation8}
+
+\begin{equation}
+    V_{s}(t) = \frac{K .|V_{e}(t)|.|V_{LO}(t)|}{2} \left[cos(2\Omega_{e} t + \Phi_{e}(t) + \Phi_{LO}(t)) + cos( \Phi_{e}(t) - \Phi_{LO}(t))\right]
+    \label{eq:equation8}
+\end{equation}
+
+avec $\frac{K .|V_{e}(t)|.|V_{LO}(t)|}{2}$ la transmittance statique ou sensibilité
+du comparateur de phase.
+
+En associant ce circuit à un filtre passe bas, obtenons un mélangeur des signaux 
+downconverter comme décrit la figure \ref{fig:figure901}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{mesDiagrammes/melangeurSignauxFiltrePassebas.png}
+    \caption{Schéma bloc du mélangeur des signaux avec filtre passe bas}
+    \label{fig:figure901}
+\end{figure}
+
+De manière pratique nous nous sommes proposer d'utiliser le module LTC5510(voir figure \ref{fig:figure903}). Les raisons
+principale de notre choix sont les suivantes:
+\begin{itemize}
+    \item Fonction principale : Mélangeur actif large bande haute linéarité (Up-converter ou Down-converter).
+    \item Plage de fréquences :
+    \item Fréquence d'entrée/LO : 1 MHz à 6 GHz.
+    \item Fréquence de sortie (FI) : Peut varier, par exemple, 10 MHz à 1,3 GHz pour des applications basse fréquence, ou 1,2 GHz à 2,1 GHz pour des applications haute fréquence.
+    \item Gain de conversion : Typiquement 1,5 dB.
+    \item Facteur de bruit (Noise Figure - NF) : Typiquement 11,6 dB (ou 11,8 dB selon les conditions de test).
+
+    \item Niveau de pilotage de l'oscillateur local (LO Drive Level) : Nécessite seulement 0 dBm, ce qui simplifie les exigences du circuit de pilotage externe.
+    \item Tension d'alimentation : 5V ou 3.3V.
+\end{itemize}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.6]{mesDiagrammes/shemaLTC5510.png}
+    \caption{Schéma interne du LTC5510\cite{LT5510}}
+    \label{fig:figure902}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.2]{mesDiagrammes/img/LTC5510.jpeg}
+    \caption{Le module LTC5510}
+    \label{fig:figure903}
+\end{figure}
+
+Pour réaliser le rôle de l'oscillateur local, nous nous sommes penché sur le circuit
+ADF4351 (voir la figure \ref{fig:figure904}), qui est un synthétiseur des fréquence à larges bande avec boucle à verrouillage de phase
+et possède les caractéristiques suivantes :
+\begin{itemize}
+    \item Gamme de fréquences: 35 MHz à 4.4 GHz. 
+    \item Type de synthétiseur: Fractionnaire-N et entier-N. 
+    \item VCO: Intégré, avec une fréquence de sortie fondamentale de 2200 MHz à 4400 MHz. 
+    \item Prédiviseurs: Diviseurs par 1, 2, 4, 8, 16, 32 et 64 pour générer des fréquences plus basses. 
+    \item Interface de contrôle: Bus série à trois fils. 
+    \item Détecteur RMS: Détecteur RMS sélectif en fréquence. 
+    \item Plage dynamique: 90 dB. 
+\end{itemize}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.1]{mesDiagrammes/img/ADF4351.jpeg}
+    \caption{Le module ADF4351}
+    \label{fig:figure904}
+\end{figure}
+
+
+\subsubsection{Réception en mode puissance-mètre}
+L'outils de mesure doit être très précis et très fiable. Dans le cas de 
+l'instrumentation pour l'homologation de nos système RADAR, il est nécessaire que la tension de 
+sortie $V_{S}$ de nos amplificateur soit  une fonction concave du courant $i_{e}$; une phase 
+étendue de niveaux du signal d'entrée et ainsi transformée en gamme compatible avec les possibilités
+du système de numérisation et d'enregistrement\cite{roodaki_lavasani_fard_radiation_2024}.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.4]{mesDiagrammes/AmpliLog3.png}
+    \caption{Ampli logarithmique}
+    \label{fig:figure10}
+\end{figure}
+
+La figure \ref{fig:figure10} possède les avantages d'un faible temps de réponse et d'une impédance
+de sortie réduite.
+\begin{itemize}
+    \item $Rs$ : est la résistance d'isolement du capteur RF, ici dans notre cas de l'antenne.
+    \item $Rf$ : est la résistance d'isolement de la chaîne directe de l'amplificateur
+    \item $G$ : est le gain de l'amplificateur
+    \item $i_{e}$ : représente le courant d'entrée de la chaîne directe
+    \item $d_{0}$ : est la source de tension équivalente aux dérivées de la chaîne directe.
+\end{itemize}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.4]{mesDiagrammes/AmpliLog2Test.png}
+    \caption{Étude de l'ampli logarithmique}
+    \label{fig:figure101}
+\end{figure}
+
+Le fonctionnement en régime continue du circuit est alors décrit comme suite :
+\begin{equation*}
+    kV_{s} + V - d_{0} - \epsilon = 0
+\end{equation*}
+\begin{equation}
+    \Rightarrow kV_{s} \left( 1 + \frac{1}{kG} \right)  - d_{0} + f \left(i_{e} - i_{0} + \frac{V_{s}}{G}\left[\frac{1}{R_{f}} + \frac{1}{R_{s}}\right] - d_{0}\left[\frac{1}{R_{f}} + \frac{1}{R_{s}}\right]\right) = 0
+    \label{eq:equation1}
+\end{equation}
+
+Dans le cas idéal ou l'amplificateur de la chaîne directe est supposé sans dérivé, sans 
+courant d'entrée et de Gain infini alors :
+\begin{equation}
+    kV_{s} \left(1 + \frac{1}{kG}\right)  - d_{0} + f\left(i_{e}\right) = 0
+    \label{eq:equation2} 
+\end{equation}
+\begin{equation*}
+    \Rightarrow kV_{s} + f\left(i_{e}\right) = 0    
+\end{equation*}
+
+\begin{equation}
+    \Rightarrow V_{s} = \frac{1}{k} f\left(i_{e}\right)
+    \label{eq:equation3}   
+\end{equation}
+
+En particulier, la caractéristique de l’élément de contre réaction est $V = a + b \log{i}$.
+En pratique, cependant, la relation \ref{eq:equation2} souligne le rôle fondamental joué par
+$i_{0}$, $d_{0}$ et $R_{f}$ même quand $G$ est infini. On aura en effet :
+\begin{equation}
+    kV_{s} - d_{0} = - f\left( i_{e} - i_{o} - d_{0}\left[\frac{1}{R_{s}} + \frac{1}{R_{f}} \right]\right)
+    \label{eq:equation4}
+\end{equation}
+
+Dans l’équation \ref{eq:equation4}; on voit apparaître une erreur de lecture $d_{0}$ et 
+une erreur de mesure $i_{0} + d_{0} \left[ \frac{1}{R_{s}} + \frac{1}{R_{f}} \right]$
+
+Le circuit de contre réaction est simplement un élément à semi-conducteur. Dans notre exemple
+un transistor.
+\begin{equation*}
+    I_{c} = I_{c_{1}} \left[e^{{V_{be}} / {U_{T}}} - 1 \right]
+\end{equation*}
+\begin{equation*}
+    \Rightarrow \ln\left(\frac{I_{c}}{I_{c_{1}}} + 1 \right) = \frac{V_{be}}{U_{T}}
+\end{equation*}
+
+\begin{equation}
+    \Rightarrow V_{be} =U_{T} \left[ \ln\left(I_{c}\right) - \ln\left(I_{c_{1}}\right)\right]
+    \label{eq:equation5}
+\end{equation}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.4]{mesDiagrammes/AmpliLog2Transistor.png}
+    \caption{Ampli logarithmique avec élément semi conducteur}
+    \label{fig:figure11}
+\end{figure}
+Pour raison d'expérimentation, nous nous somme permis d'utiliser une carte de développement 
+contenant le circuit de la figure \ref{fig:figure12}.
+Le système RADAR rencontré fonctionnait dans la gamme  des micro-ondes. De ce fait nous 
+disposons d'un amplificateur logarithmique AD8317 possédant les spécifications suivantes :
+\begin{itemize}
+    \item Bande de fréquence : $1$MHz - $10$GHz
+    \item Haute précision : $\pm 1dB $ au dessus de la Temperature de travail.
+    \item Stabilité au dessus de la Temperature de travail : $\pm 0.5 dB$
+    \item Temps de réponse impulsionnelle : 6 ns/10 ns
+    \item Impédance d'entrée : $55 \Omega$(avec une erreur inférieure à ± 3 dB)
+    \item Tension d'alimentation : $3.0$ V à $5.5$ V 
+    \item Consommation de courant : $22 mA$ et diminue à $200 \mu A$ lorsque l'appareil est désactivé
+\end{itemize}
+L'AD8317 est un amplificateur logarithmique démodulateur, capable de convertir avec précision un signal d'entrée RF en un signal de sortie correspondant, échelonné en décibels. 
+Il utilise la technique de compression progressive sur une chaîne d'amplification en cascade, chaque étage étant équipé d'une cellule de détection.
+ L'AD8317 présente un temps de réponse de 6 ns/10 ns  Ce dispositif offre une stabilité d'interception 
+logarithmique sans précédent à température ambiante.
+\cite{ad8317}.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.6]{mesDiagrammes/img/ad8317_circuit.png}
+    \caption{Circuit de l'amplificateur logarithme AD8317\cite{ad8317}}
+    \label{fig:figure12}
+\end{figure}
+
+Le schéma sur la figure \ref{fig:figure131} nous présente les différentes connexions 
+entre nos différents modules.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale=0.7]{mesDiagrammes/myHOMOLOG.png}
+    \caption{Circuit complet du système d'homologation}
+    \label{fig:figure131}
+\end{figure}
+
+\subsection{Application de l'homologation (partie logiciel)}
+Notre application sera implémenter au moyen du framework Qt Creator(voir figure
+\ref{fig:figure14}), au
+moyen du lange de programmation C++. Le code ci dessous décrit
+les lignes de code  principaux du système.
+
+\begin{lstlisting}[caption=Code principal, label=lst:moncode]
+#include "mainwindow.h"
+
+#include <QApplication>
+#include <QIcon>
+
+
+/// @brief  Classe principale du systeme
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    // 1. Creer un objet QIcon a partir d'une ressource
+    QIcon myIcon("F:/TFC_2025/mesDiagrammes/img/arptclogo2.png");
+    MainWindow w;
+    w.setWindowIcon(myIcon);
+    w.show();
+    return a.exec();
+}
+\end{lstlisting}
+
+La fonction \ac{FFT} sera implémenter par notre application,  comme le décrit les
+lignes de code qui suivent :
+% \begin[inputencoding=utf8]{lstlisting}
+%     QVector<QPointF> MainWindow::performFFT(const QVector<double>& timeDomainSamples, double samplingFrequencyHz)
+% {
+%     // Verifions le nombre des donnees recus
+%     qDebug()<<"On veut faire la FFT\n";
+%     int N = timeDomainSamples.size();
+%     if (N == 0 || (N & (N - 1)) != 0) { // Vérifie si N est une puissance de 2
+%         qWarning() << "FFT: Le nombre d'échantillons doit être une puissance de 2 et non nul.";
+%         return {};
+%     }
+%     // Calculer log2(n)
+%     int log2n = 0;
+%     while ((1 << log2n) < N) {
+%         log2n++;
+%     }
+
+%     // Structure pour les nombres complexes (partie réelle, partie imaginaire)
+%     struct Complex {
+%         double real;
+%         double imag;
+%         Complex(double r = 0.0, double i = 0.0) : real(r), imag(i) {}
+%         Complex operator+(const Complex& other) const { return Complex(real + other.real, imag + other.imag); }
+%         Complex operator-(const Complex& other) const { return Complex(real - other.real, imag - other.imag); }
+%         Complex operator*(const Complex& other) const {
+%             return Complex(real * other.real - imag * other.imag, real * other.imag + imag * other.real);
+%         }
+%     };
+
+%     QVector<Complex> X(N); // Tableau pour les nombres complexes de la FFT
+
+%     // 1. Initalisation avec les échantillons et conversion en complexes
+%     for (int i = 0; i < N; ++i) {
+%         qDebug()<<"On initialise le time domaine";
+%         X[i] = Complex(timeDomainSamples[i], 0.0);
+%     }
+%     qDebug()<<"On finti avec le time domaine";
+
+%     // 2. Réarrangement par inversion de bits (Bit-reversal permutation)
+%     for (int i = 0; i < N; ++i) {
+%         qDebug()<<"Reversal Bit";
+%         int j = reverse_bits(i, log2n);
+%         if (i < j) { // Éviter les échanges doubles
+%             std::swap(X[i], X[j]);
+%         }
+%     }
+
+%     // Étape 2 : Boucles itératives pour calculer la FFT/IFFT
+%     // 'len' est la taille de la "fenêtre" ou du sous-problème courant
+%     for (int len = 2; len <= N; len <<= 1) { // len = 2, 4, 8, ..., n
+%         // 'ang' est l'angle pour les facteurs de rotation de cette étape
+%         double ang = - 2 * M_PI / len;
+%         // 'wlen' est le facteur de rotation de base pour cette longueur de fenêtre
+%         Complex wlen(std::cos(ang), std::sin(ang));
+
+%         // Parcourir les blocs de longueur 'len'
+%         for (int i = 0; i < N; i += len) {
+%             Complex w(1.0, 0.0); // 'w' est le facteur de rotation courant pour le bloc
+
+%             // Appliquer l'opération papillon (butterfly operation) à l'intérieur de chaque bloc
+%             // Les deux parties de la papillon sont séparées par len / 2
+%             for (int j = 0; j < len / 2; j++) {
+%                 // Les indices des éléments à combiner sont (i + j) et (i + j + len / 2)
+%                 Complex u = X[i + j];
+%                 Complex v = X[i + j + len / 2] * w; // Appliquer le facteur de rotation
+%                 X[i + j] = u + v;
+%                 X[i + j + len / 2] = u - v;
+%                 w = w * wlen; // Mettre à jour le facteur de rotation pour la prochaine paire
+%             }
+%         }
+%     }
+
+%     // // 4. Conversion des résultats en magnitude (en dB) et fréquence (en MHz)
+%     QVector<QPointF> fftResult;
+
+%     // return magnitudes; // Retourne le vecteur des magnitudes du spectre fréquentiel.
+
+
+%     // // 4. Conversion des résultats en magnitude (en dB) et fréquence (en MHz)
+%     // QVector<QPointF> fftResult;
+%     double maxMagnitude = 0.0; // Pour trouver le maximum pour la normalisation
+
+%     // Nous ne prenons que la première moitié (N/2) des points de fréquence
+%     // car la deuxième moitié est symétrique (pour les signaux réels).
+%     // Les fréquences sont de 0 à la fréquence de Nyquist (Fs/2).
+%     for (int i = 0; i < N / 2; ++i) {
+%         // double magnitude_linear = std::sqrt(X[i].real * X[i].real + X[i].imag * X[i].imag);
+%         double magnitude_linear = std::abs(X[i].real);
+%         if (i == 0) { // Pour la composante DC (fréquence 0), la magnitude est déjà exacte
+%             maxMagnitude = std::max(maxMagnitude, magnitude_linear);
+%         } else {
+%             // Pour les fréquences positives (i > 0), le spectre est double face.
+%             // On multiplie par 2 pour obtenir la puissance totale à cette fréquence.
+%             // (Ou alternativement, diviser par N et non par N/2 pour la magnitude absolue)
+%             // Ici, on se concentre sur le niveau relatif.
+%             maxMagnitude = std::max(maxMagnitude, magnitude_linear);
+%         }
+%     }
+%     // Normaliser à 0 dB et convertir en dB
+%     // Utiliser une petite valeur pour éviter log10(0)
+%     const double MIN_DB_FLOOR = -100.0; // Plancher pour le graphique en dB
+%     if (maxMagnitude == 0.0) maxMagnitude = 1e-9; // Éviter la division par zéro
+
+%     for (int i = 0; i < N / 2; ++i) { // Traiter seulement jusqu'à la fréquence de Nyquist
+%         double frequency_hz = (double)i * (samplingFrequencyHz / N); // Fréquence en Hertz
+%         double magnitude_linear = std::sqrt(X[i].real * X[i].real + X[i].imag * X[i].imag);
+
+%         double magnitude_db;
+%         if (magnitude_linear > 1e-9 * maxMagnitude) { // Éviter log10(très petit nombre)
+%             magnitude_db = 10 * std::log10(magnitude_linear / maxMagnitude);
+%             // Si vous voulez la magnitude absolue, vous pouvez diviser par N plutôt que maxMagnitude
+%             // Ou utiliser une référence de puissance (ex: 1Vrms = 0dBV)
+%         } else {
+%             magnitude_db = MIN_DB_FLOOR;
+%         }
+%         magnitude_db = std::max(magnitude_db, MIN_DB_FLOOR); // S'assurer du plancher minimum
+%         fftResult.append(QPointF(frequency_hz, magnitude_db)); // Fréquence en MHz, amplitude en dB
+%     }
+%     qDebug() << "FFT calculée pour" << N << "points. Fréquence d'échantillonnage:" << samplingFrequencyHz << "Hz.";
+%     return fftResult;
+% }
+% \end{lstlisting} 
+
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.21]{mesDiagrammes/QtCreator.png}
+    \caption{Qt Creator}
+    \label{fig:figure14}
+\end{figure}
+
+Par défaut lorsque l'application est lancé, c'est le mode puissance mètre
+(voir figure \ref{fig:figure15}) qui est affiché.
+L'utilisateur a la possibilité de changer des modes en selectionnant l'option paramètres offre à 
+il s'affichera trois option :
+\begin{itemize}
+    \item Puissance mètre
+    \item Domaine spectral
+    \item Domaine temporel
+\end{itemize}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.4]{mesDiagrammes/pwrMeterMode.png}
+    \caption{Application d'homologation}
+    \label{fig:figure15}
+\end{figure}
+Pour établir une communication série avec les équipements de mesures, l'utilisateur
+doit appuyer sur la barre d'outil \textbf{Config} et il devra configurer la communication
+série et sélectionner le port de communication. Les options à spécifier sont :
+\begin{itemize}
+    \item Le port série,
+    \item le débit en bauds (par défaut 9600 bauds),
+    \item le nombre des bits des données(par défaut 8 bits),
+    \item le bit de parité(par défaut aucun),
+    \item le bit d’arrêt(par défaut le niveau logique 1),
+    \item le contrôle de flux(Par défaut)
+\end{itemize}
+
+La communication série est établie via le protocole UART.Le protocole UART (Universal Asynchronous Receiver/Transmitter) se distingue par sa nature asynchrone. Contrairement aux protocoles synchrones qui partagent un signal d'horloge commun pour la synchronisation, l'UART s'appuie sur une synchronisation indépendante entre l'émetteur et le récepteur. Cette synchronisation est rendue possible grâce à des informations de cadencement contenues directement dans la trame de données.
+
+Le débit de données ou Baud Rate est un paramètre critique qui définit la vitesse 
+à laquelle les bits sont transmis. Il est exprimé en bits par seconde (bps). Afin 
+que la communication soit établie, l'émetteur et le récepteur doivent 
+impérativement être configurés avec le même débit. Des débits courants 
+incluent 9600 bps, 19200 bps et 115200 bps. Si ce paramètre est mal configuré, 
+le récepteur ne pourra pas interpréter correctement les bits reçus, ce qui 
+entraînera une communication erronée.
+
+Une communication UART est organisée en trames de données (ou Data Frames). 
+Une trame est un paquet de bits qui encapsule les données utiles avec des bits 
+de contrôle. La structure d'une trame standard est la suivante :
+\begin{itemize}
+    \item Bit de Start : Il s'agit d'un bit de valeur 0 qui marque le début de la trame. Il sert de signal au récepteur pour lancer sa propre horloge de synchronisation afin de lire les bits suivants.
+    \item Bits de données : Ce sont les bits qui transportent l'information utile. Le nombre de bits de données est généralement de 8, mais il peut aussi être de 7.
+    \item Bit de parité (optionnel) : Ce bit est utilisé pour la détection d'erreurs simples. Le bit est défini de manière à ce que le nombre total de bits à 1 dans la trame (y compris le bit de parité) soit pair (parité paire) ou impair (parité impaire).
+ 
+    \item Bit(s) de Stop : Ce sont un ou deux bits de valeur 1 qui signalent la fin de la trame. Ils permettent de remettre la ligne à son état de repos.
+\end{itemize}
+
+La figure \ref{fig:figure16} une représentation schématique d'une trame de données UART :
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.4]{mesDiagrammes/trameUART.png}
+    \caption{Trame UART}
+    \label{fig:figure16}
+\end{figure}
+
+La ligne de communication, au repos, est maintenue à un niveau logique haut (1). 
+La trame commence par un changement d'état vers le bas (0), ce qui active le récepteur.
+
+En associant le tout, nous obtenons un analyseur des réseaux vectoriel (ARV) dédié, en 
+anglais Vectorial Network Analyser(VNA) pour l'homologation
+des systèmes RADAR.
+
+\section{Conclusion partielle}
+Ce chapitre détaille la mise en œuvre pratique de notre système d'aide à l'homologation des systèmes radars, en s'appuyant sur les 
+spécifications et la conception élaborées précédemment. Nous y explorerons les choix matériels et logiciels fondamentaux, depuis la conception 
+de la chambre anéchoïque jusqu'à la mise en place du circuit d'acquisition des signaux RF et le développement de l'interface logicielle, en 
+passant par les simulations nécessaires à la validation de notre approche.

@@ -1,0 +1,387 @@
+% =============================================================================================================================================================================
+% ===============================================================================================================================================================================
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHAPITRE 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{TESTS \& INTERPRÉTATION DES RÉSULTATS DU SYSTÈME}
+\section{Introduction partielle}
+
+Ce chapitre est dédié à la validation de notre système d'homologation à travers une série de tests rigoureux. Nous y présenterons les 
+procédures de mesure RF effectuées au sein de la chambre anéchoïque, notamment l'acquisition des diagrammes de rayonnement et l'analyse de 
+la compatibilité électromagnétique (CEM) conformément à la norme CISPR 25. L'interprétation des résultats obtenus permettra d'évaluer la 
+performance et la conformité de l'équipement sous test, fournissant ainsi une validation concrète de l'outil développé.
+
+\section{Test d'homologation}
+Nous allons commencer par recupèrer des mesures RF. De ce fait, nous utiliserons 
+le logiciel CST Studio comme simulateur d'Antenne. Dans notre cas de figure l'antenne
+sera notre équipement sous test, en anglais \textbf{Équipment Under Test (EUT)}\cite{iec6000}.
+L'antenne devra être placé dans la chambre anéchoïque et se verra générer un signal de 
+test. Le signal de test est représenté dans la figure \ref{fig:figure42} 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{CST_Studio/TestingAntenna/testTingAntenna/Export/hornAntenna.png}
+    \caption{Antenne en zone de test}
+    \label{fig:figure41}
+\end{figure}
+
+Au sein du logiciel CST Studio, nous allons placer une antenne cornet(voir figure \ref{fig:figure41}), car le dispositifs
+radar vu sur terrain était constitué de deux antennes cornets, un jouant le role
+d’émetteur et l'autre jouant le rôle de récepteur.
+
+Au tout debut, nous aurons à spécifier la fréquence de fonctionnement de l'antenne, 
+comme nous spécifie la figure \ref{fig:figure411}.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{mesDiagrammes/frequenceAntenne.png}
+    \caption{Fréquence de fonctionnement de l'antenne}
+    \label{fig:figure411}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{mesDiagrammes/img/signalTest.png}
+    \caption{Signal test}
+    \label{fig:figure42}
+\end{figure}
+
+La gamme de fréquence utilisée environne
+les 10GHz(spécifique aux recommandation de l'UIT sur l'utilisation des ondes radio comme onde 
+de détection radar), dans notre cas nous sommes entre 15GHz et 18GHz comme le spécifie
+le tableau \ref{tab:table1}. Nous pouvons visualiser le signal en 3D dans CST Studio 
+comme nous montre la figure \ref{fig:figure43}
+
+
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.6]{CST_Studio/TestingAntenna/testTingAntenna/Export/rayonnementDiag.png}
+    \caption{Diagramme de rayonnement de l'EUT}
+    \label{fig:figure43}
+\end{figure}
+
+Nous allons de ce fait récupérer les données du diagramme de rayonnement de
+l'EUT dans un fichier et fournir ce dernier à notre logiciel d'homologation.
+
+Ceci étant fait, nous lançons notre application et sélectionnons, à l'onglet
+\emph{Paramètres}, l'option \emph{Puissance mètre}. Nous obtenons l'image
+décrite par la figure \ref{fig:figure44}.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.5]{mesDiagrammes/img/testRayonnement.png}
+    \caption{Diagramme de rayonnement en mode Puissance mètre}
+    \label{fig:figure44}
+\end{figure}
+
+ Avec le logiciel CST Studio, il est possible de réaliser le test 
+ CEM, de ce fait nous irons dans l'onglet Post-processing, dans la barre d'outils, nous
+ choisirons EMC Workflow dans l'option EMC Standard Limits. Nous serons sur une boite de
+ dialogue suivante :
+
+ \begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.5]{mesDiagrammes/img/dialohue.png}
+    \caption{Interface de paramétrage pour test CEM}
+    \label{fig:figure45}
+\end{figure}
+
+Nous choisissons la norme CISPR 25 RE TEM, qui est la norme appropriée pour les équipements radars, 
+et la classe 1.
+
+Une fois lancé la simulation, nous avons le diagramme suivant décrit par la figure 
+\ref{fig:figure46}.
+Ce diagramme est un graphique de mesures de compatibilité électromagnétique (CEM), très 
+probablement lié à des tests d'émissions ou d'immunité radiofréquence. Il permet 
+d'analyser le comportement d'un équipement sur différentes bandes de fréquences.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.35]{mesDiagrammes/img/emchomolgation.png}
+    \caption{Interface de paramétrage pour test CEM}
+    \label{fig:figure46}
+\end{figure}
+
+\section{Interprétation du diagramme de test CEM}
+
+% \subsubsection{Axes du graphique}
+% \begin{itemize}
+%     \item Axe des X (horizontal): Représente la Fréquence (Freq / GHz), allant de 
+%     0.0001 GHz (100 kHz) à 1 GHz. Les lignes verticales pointillées indiquent des 
+%     points de fréquence spécifiques ou des limites de bande.
+%     \item Axe des Y (vertical): Représente la Magnitude (Magnitude / dB(V/m)), 
+%     exprimée en décibels par volt par mètre. C'est une mesure de l'intensité du champ électromagnétique. Des valeurs plus faibles sur cet axe indiquent généralement des émissions plus faibles (ce qui est souvent souhaitable pour la CEM).
+% \end{itemize}
+
+% Le graphique présente plusieurs séries de données, chacune identifiée par une 
+% couleur et un type de marqueur différents, et nommées selon le format 
+% "$Type-Bande\_NomBande$".
+
+Après tests nous avons procéder à récolter les mesures suivantes
+
+\subsubsection{Types de mesures}
+
+\begin{itemize}
+    \item AVG-Band (Average Band) : Représente les mesures de valeur moyenne.
+        % \subitem $AVG-Band\_LW$ et $AVG-Band\_MW$ : Les niveaux se situent autour de 
+        % -74 dB(V/m) et -88 dB(V/m) respectivement. Ce sont les plus élevés parmi les 
+        % mesures moyennes.
+
+        % \subitem $AVG-Band\_FM$, $AVG-Band\_TVI$, $AVG-Band\_TVIII$ : Les niveaux 
+        % sont autour de -90 dB(V/m).
+
+        % \subitem $AVG-Band\_CB$, $AVG-Band\_DAB$, $AVG-Band\_SW$, $AVG-Band\_VHF1$, 
+        % $AVG-Band\_VHF2$, $AVG-Band\_VHF3$ : Ces bandes montrent les niveaux moyens les 
+        % plus bas, autour de -96 dB(V/m).
+    
+    \item Peak-Band (Peak Band) : Représente les mesures de valeur de crête (le 
+    maximum instantané).
+        % \subitem $Peak-Band\_LW$ et $Peak-Band\_MW$ : Atteignent -54 dB(V/m) et 
+        % -68 dB(V/m), ce qui représente les magnitudes maximales enregistrées sur ce 
+        % graphique.
+
+        % \subitem $Peak-Band\_FM$ : Environ -70 dB(V/m).
+
+        % \subitem $Peak-Band\_CB$, $Peak-Band\_VHF1$, $Peak-Band\_VHF2$, $Peak-Band\_VHF3$, 
+        % $Peak-Band\_SW$ : Se situent autour de -76 dB(V/m).
+
+        % \subitem $Peak-Band\_TVI$ et $Peak-Band\_TVIII$ : Environ -80 dB(V/m).
+
+        % \subitem $Peak-Band\_DAB$ : Environ -86 dB(V/m).
+    
+    \item QP-Band (Quasi-Peak Band) : Représente les mesures de quasi-crête, 
+    qui sont souvent utilisées dans les normes CEM pour évaluer l'impact des 
+    interférences sur les récepteurs humains (elles sont moins sensibles aux 
+    bruits impulsifs que les mesures de crête pures).
+        % \subitem $QP-Band\_LW$ : Environ -67 dB(V/m).
+
+        % \subitem $QP-Band\_FM$ : Environ -83 dB(V/m).
+
+        % \subitem $QP-Band\_CB$ : Environ -89 dB(V/m).
+
+\end{itemize}
+
+\subsubsection{Sources potentielles d'interférences}
+
+Les sources potentielles d'interférences sont les bandes de fréquences où les niveaux 
+de magnitude (dB(V/m)) sont les plus élevés, en particulier pour les mesures "Peak" 
+(crête) et "QP" (quasi-crête), car ce sont souvent ces valeurs qui sont comparées 
+aux limites réglementaires.
+
+% En observant le graphique :
+
+% \begin{itemize}
+%     \item Bandes LW (Long Wave) et MW (Medium Wave) : Les mesures $Peak-Band\_LW$ et 
+%     $Peak-Band\_MW$ affichent les niveaux d'émission les plus élevés, atteignant 
+%     environ -54 dB(V/m) et -68 dB(V/m) respectivement. Ces bandes, situées aux 
+%     fréquences les plus basses (0.0001 GHz à 0.0018 GHz), présentent les magnitudes 
+%     les plus importantes, ce qui pourrait indiquer des émissions significatives dans 
+%     ces gammes.
+%     \item Bande FM (Frequency Modulation) : Les mesures $Peak-Band\_FM$ montrent 
+%     également des niveaux relativement élevés, autour de -70 dB(V/m), dans la gamme 
+%     de fréquences de la radio FM (0.076 GHz à 0.108 GHz).
+%     \item Bandes CB (Citizen Band), VHF1, VHF2, VHF3, TVI, TVIII : Les mesures 
+%     "Peak" dans ces bandes sont généralement autour de -76 dB(V/m) à -86 dB(V/m). 
+%     Bien que moins élevées que les bandes LW/MW/FM, elles représentent toujours des 
+%     émissions à surveiller.
+% \end{itemize}
+
+\subsubsection{Niveaux d'émission de l'équipement}
+
+Les niveaux d'émission sont la magnitude du champ électromagnétique mesurée en dB(V/m) 
+pour chaque bande et chaque type de détection. Voici une synthèse des 
+niveaux observés dans le graphique :
+
+\subsection{Analyse des niveaux d'émission}
+
+Nous allons commencer par analyser la puissance rayonnée par l'équipement, comme nous le présente la figure \ref{fig:figure47}. 
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.35]{mesDiagrammes/plotsTest/Power Radiated.png}
+    \caption{Puissance rayonnée durant le test CEM}
+    \label{fig:figure47}
+\end{figure}
+
+Ce graphique de la figure \ref{fig:figure47} illustre la puissance rayonnée (en Watts, partie réelle) en fonction de la fréquence (en GHz).
+Il montre que la puissance rayonnée est relativement stable autour de 0.493 W sur une large gamme de fréquences (de 1 GHz à environ 8 GHz).
+Un pic d'émission très net est observé juste en dessous de 9 GHz, où la puissance atteint près de 0.498 W. Après ce pic, la puissance diminue brusquement.
+Ce graphique  indique les fréquences d'opération principales de l'EUT (le radar lui-même).
+
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.35]{mesDiagrammes/plotsTest/VSWR1.png}
+    \caption{VSWR durant le test CEM}
+    \label{fig:figure48}
+\end{figure}
+
+La figure \ref{fig:figure48} quand à elle illustre le rapport d'onde stationnaire de tension (VSWR) durant le test CEM.
+Il montre que le VSWR reste généralement en dessous de 2:1 sur la plupart des bandes de fréquence, ce qui est considéré comme acceptable pour 
+une bonne adaptation d'impédance. Cependant, des pics occasionnels au-dessus de 2:1 sont observés, en particulier autour de 9 GHz, ce qui 
+pourrait indiquer des problèmes d'adaptation d'impédance à ces fréquences.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.4]{mesDiagrammes/plotsTest/AVG-Band_LW.png}
+    \includegraphics[scale=0.4]{mesDiagrammes/plotsTest/Peak-Band_LW.png}
+    \includegraphics[scale=0.4]{mesDiagrammes/plotsTest/QP-Band_LW.png}
+    \caption{Niveaux d'émission durant le test CEM}
+    \label{fig:figure49}
+\end{figure}
+
+Les graphiques de la figure \ref{fig:figure49} montrent les niveaux d'émission pour trois types de mesures : moyenne (AVG), crête (Peak) et quasi-peak (QP).
+Le niveau d'émission moyen stable d'environ -74 dB(V/m) entre 0.0001 GHz (100 kHz) et 0.0003 GHz (300 kHz).
+et le niveau de crête de l'émission dans cette même bande est plus élevé, atteignant environ -54 dB(V/m). 
+La différence significative entre les valeurs moyennes et de crête peut suggérer la présence de signaux impulsifs ou de bruit importants 
+dans cette bande.
+Le niveau quasi-peak est légèrement plus bas que le niveau de crête, mais reste supérieur au niveau moyen, ce qui est typique pour les mesures CEM.
+
+\section{Rapport d'analyse}
+
+Le rapport d'analyse présente une évaluation détaillée des résultats des tests de rayonnement et de 
+compatibilité électromagnétique (CEM) effectués sur l'équipement radar. Les données recueillies ont 
+été analysées pour déterminer la conformité de l'équipement aux normes en vigueur.
+
+Les graphiques et tableaux inclus dans ce rapport fournissent une vue d'ensemble des performances de 
+l'équipement, mettant en évidence les points forts et les domaines nécessitant des améliorations. 
+Les résultats montrent que l'équipement fonctionne dans les limites acceptables pour la plupart 
+des bandes de fréquence, bien que des pics d'émission aient été observés à certaines fréquences.
+
+En effet l'annexe 2 présente le modèle de rapport après test, qui peut être 
+utilisé comme référence pour les futurs tests de conformité.
+
+L'annexe 3 fournit le modèle de rapport que le technicien de l'ARPTC devra remplir et fournir au demandeur.
+
+L'annexe 4 présente le modèle de rapport que le demandeur devra remplir et fournir 
+à l'ARPTC.
+
+
+\section{Aspect Budgétaire}
+
+\subsection{Coûts Initiaux et d'Investissement (Infrastructure et Équipement)}
+
+
+\begin{itemize}
+    \item Chambre Anéchoïque (pour tests CEM et RF) : La construction et 
+    l'installation d'une chambre anéchoïque de petite à moyenne taille 
+    (environ 7x7m²) représentent un investissement majeur.
+
+    \subitem Estimation : $108 000$  à $1080000$ USD (ou plus pour des 
+    installations très sophistiquées). Ce coût inclut la cage de 
+    Faraday, les matériaux absorbants (dièdres pyramidaux), 
+    l'installation et l'intégration.
+
+    \subitem Les matériaux absorbants seuls (nos 58 panneaux TSA-200PI).
+    \subitem Estimation des matériaux seuls : $32 400$ à $108 000$ USD.
+
+    \item Équipements de Mesure RF (Composants du VNA dédié) :
+    \subitem Les modules électroniques de base :
+        \begin{itemize}
+            \item Module LTC5510 (mélangeur RF) : Environ 54  à
+            $216$ USD par unité.
+            \item Module ADF4351 (synthétiseur de fréquence) : Environ 32  à
+            $162$ USD par unité.
+            \item Amplificateur logarithmique AD8317 : Environ 11  à
+            $54$ USD par unité.
+        \end{itemize}
+    \subitem Si l'ARPTC optait pour un Analyseur de Réseau Vectoriel (VNA)
+    professionnel tout-en-un du marché, les prix sont bien plus élevés :
+
+    \subitem Estimation VNA professionnel : $10 800$ (entrée de gamme) 
+    à $540 000$ USD ou plus (haut de gamme/laboratoire).
+
+    \subitem Estimation VNA professionnel : $10 800$ (entrée de gamme) 
+    à $540 000$ USD ou plus (haut de gamme/laboratoire).
+
+
+\end{itemize}
+
+
+
+
+
+
+
+\subsection{Coûts des Licences Logicielles}
+Les logiciels spécialisés sont souvent soumis à des licences coûteuses, surtout pour un usage professionnel.
+
+\begin{itemize}
+    \item Qt Creator (licence commerciale) : Estimation : De quelques 
+    milliers à plusieurs dizaines de milliers de dollars USD par 
+    développeur/poste par an. (Ex: $5 000$ à $30 000$ USD).
+
+    \item CST Studio Suite (pour simulation RF/CEM) : Estimation : 
+    $32 400$ à $108 000$ USD ou plus par an pour une suite complète.
+
+    \item COMSOL Multiphysics (pour modélisation de chambre anéchoïque) :
+    Estimation : $10 800$ à $54 000$ USD par an (selon les modules).
+
+    \item Antenna Magnus : Estimation de quelques milliers à plusieurs 
+    dizaines de milliers de dollars USD. (Ex: $2 000$ à $20 000$ USD).
+
+    \item KiCAD : Généralement gratuit (logiciel open-source).
+
+    \item Total estimé pour l'acquisition initiale de licences 
+    logicielles (pour plusieurs postes/modules) : $108 000$ à $540 000$ 
+    USD et au-delà.
+\end{itemize}
+
+\subsection{Coûts de Formation et de Compétence}
+\begin{itemize}
+    \item Formation des ingénieurs et techniciens : 
+    \subitem Estimation : $2 160$ à $10 800$ USD par personne pour des 
+    formations spécialisées et certifiantes (ex: CST, COMSOL, Qt).
+
+    \item Formation continue et mise à jour des compétences : 
+    \subitem Estimation : $1 080$ à $5 400$ USD par an par personne.
+\end{itemize}
+
+\subsection{Coûts Opérationnels et de Maintenance Annuels}
+
+\begin{itemize}
+    \item Maintenance de la chambre anéchoïque :
+
+    \subitem Estimation : $5 400$ à $21 600$ USD par an (nettoyage, 
+    recalibrage, remplacement de matériaux absorbants).
+
+    \item Maintenance des équipements de mesure RF :
+    \subitem Estimation : $5 400$ à $32 400$ USD par an (calibration, 
+    réparations, mises à jour logicielles).
+
+    \item Coûts des licences logicielles (renouvellement) :
+    \subitem Estimation : $32 400$ à $108 000$ USD par an.
+
+    \item Coûts de fonctionnement divers (énergie, espace, etc.) :
+    \subitem Estimation : $5 400$ à $21 600$ USD par an.
+\end{itemize}
+\subsection{Récapitulatif Global (Estimations Larges en USD)}
+\begin{itemize}
+    \item Investissement Initial Total (hors R\&D interne) :
+    \subitem Entre $216 000$ et $2 160 000$ USD (voire plus), selon l'ampleur et le niveau de sophistication des installations et des équipements achetés.
+
+    \item Coûts Annuels d'Opération et de Maintien :
+    \subitem Entre $43 200$ et $162 000$ USD (voire plus), principalement pour la maintenance, la calibration et les licences logicielles.
+
+\end{itemize}
+
+Ces estimations en dollars américains confirment que l'investissement 
+nécessaire est conséquent, mais qu'il est justifié par les retombées 
+positives en termes de sécurité, de productivité et de conformité 
+réglementaire pour un secteur économique aussi vital que l'exploitation 
+minière en RDC.
+
+
+\section{Conclusion partielle}
+Pour conclure, ce chapitre a démontré la capacité opérationnelle de notre système d'homologation en présentant les résultats des 
+tests de rayonnement et de compatibilité électromagnétique (CEM). Les diagrammes générés et leur interprétation ont permis de confirmer 
+le respect des normes, mettant en évidence les performances de l'équipement radar sous test. Ces résultats valident l'efficacité de l'outil 
+développé, soulignant son potentiel à assister l'ARPTC dans le processus d'homologation des systèmes radars miniers et à garantir leur conformité.
+
+
+
+
+
+
+
+
+

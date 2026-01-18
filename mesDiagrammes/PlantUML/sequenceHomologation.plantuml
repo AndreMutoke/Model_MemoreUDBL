@@ -1,0 +1,54 @@
+@startuml
+title Diagramme d'activités du système
+
+start
+
+partition "ESP32-S3" {
+  :Démarrage du système;
+  :Initialisation des broches AD8307 (2, 4, 5, 6);
+  :Initialisation de la communication UART (9600 bauds) avec ATMEGA328P;
+  :Envoi du message "f230M" à l'ATMEGA328P;
+  -> ATMEGA328P
+}
+
+partition "ATMEGA328P" {
+  :Démarrage du microcontrôleur;
+  :Initialisation de la communication UART (9600 bauds) avec ESP32-S3;
+  <- ESP32-S3 : Réception du message "f230M";
+  :Initialisation de l'interface SPI;
+  :Configure l'ADF4351 pour générer 2.38 GHz via SPI;
+  :ADF4351 génère la fréquence de 2.38 GHz;
+  -> LTC5510 : Fournit la fréquence de 2.38 GHz (Oscillateur Local);
+}
+
+partition "LTC5510" {
+  <- ATMEGA328P : Reçoit la fréquence de l'oscillateur local (2.38 GHz);
+  :Reçoit le signal RF de 2.4 GHz;
+  :Reçoit le signal de 20 MHz;
+  :Mélange les signaux RF (2.4 GHz) et LO (2.38 GHz) et le signal 20 MHz;
+  :Effectue la down-conversion;
+  -> ESP32-S3 : Sortie du signal downconverti;
+}
+
+partition "ESP32-S3" {
+  <- LTC5510 : Reçoit le signal downconverti;
+  :Le signal downconverti passe par les modules AD8307;
+  :Lit les valeurs analogiques des AD8307;
+  :Traite le signal (valeurs lues);
+  :Envoi des données traitées au PC via USB UART (115200 bauds);
+  -> PC
+}
+
+partition "PC" {
+  <- ESP32-S3 : Réception des données traitées;
+  if (Mode d'affichage) then (Mode Temporel)
+    :Affichage des données en Mode Temporel;
+  else (Mode Fréquentiel)
+    :Application de l'algorithme FFT;
+    :Affichage des données en Mode Fréquentiel;
+  endif
+}
+
+stop
+
+@enduml

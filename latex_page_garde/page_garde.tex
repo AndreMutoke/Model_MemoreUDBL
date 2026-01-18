@@ -1,0 +1,132 @@
+% =============================================== PAGE I ===================================================================
+% POUR UTILISER LA PAGE DE GARDE UDBL, UTILISER DANS VOTRE FICHIER DE TRAVAIL
+% 1. TELECHARGE SUR LE GITHUB, LE PROJET DANS VOTRE DOSSIER DE TRAVAIL
+% 2. INCLURE LE FICHIER A VOTRE PROJET COMME INDIQUE CI-DESSOUS
+%         \documentclass{artcle}
+%         \usepackage[utf8]{inputenc}
+%        
+%         \input{latex_page_garde/page_garde}
+%         \begin{document}
+%            Mon document .........
+%         \end{document}
+%
+% 3. UTILISER LA COMMANDE SUIVANTE DANS VOTRE TRAVAIL EN SUIVANT LA SYNTAXE SUIVANTE :
+%
+%      \pagedegardeudbl{TITRE DU DOCUMENT}
+%                      {NOM DE L'AUTEUR}
+%                      {NOM DU DIRECTEUR}
+%                      {NOM DU CO-DIRECTEUR}
+%                      {NOM DE LA FILIERE ET PROMOTION}
+%
+%
+% 4. VOICI L'EXEMPLE FINAL ET COMPLET
+%
+% 
+%
+%         \documentclass{book}
+%         \usepackage[utf8]{inputenc}
+%         \usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+%         \usepackage{ragged2e}
+%         \usepackage{graphicx}
+%         \usepackage{url}
+%
+%         \input{latex_page_garde/page_garde}
+%         \begin{document}
+%            \pagedegardeudbl{Migration de la telephonie classique vers la ToIP}
+%                            {André MUTOKE}
+%                            {Emile MUTOKE}
+%                            {Baudouin BANZA}
+%                            {L4 TLC et Reseaux}
+%         \end{document}
+\newcommand{\pagedegardeudbl}[5]{
+    \pagenumbering{gobble}
+    \begin{center}
+        UNIVERSIT\'E DON BOSCO DE LUBUMBASHI \\
+        Faculté des Sciences Informatiques \\
+        Département Réseaux\\
+        Lubumbashi \\
+        www.udbl.ac.cd \\
+    \end{center}
+    \begin{center}
+        \rule{\linewidth}{2pt}
+    \end{center}
+
+    \vspace{10pt}
+    \begin{center}
+        \includegraphics[scale=.6]{latex_page_garde/udbl.png}
+    \end{center}
+
+    \begin{center}
+        \rule{\linewidth}{1pt}
+    \end{center}
+    \begin{center}
+        \textbf{\large #1 \\
+        (\emph{cas de MMG et de l'ARPTC})
+        }
+    \end{center}
+    \begin{center}
+        \rule{\linewidth}{1pt}
+    \end{center}
+
+    \vspace{5pt}
+
+    \begin{FlushRight}
+        \emph{Travail présenté et défendu en vue de l’obtention  \\  du grade d’ingénieur technicien en Informatique} \\
+        \vspace{5pt}
+        Présenté par :\textbf{#2} \\
+        Filière : \textbf{#5} \\
+    \end{FlushRight}
+    \vspace{5pt}
+    \begin{center}
+        \textbf{\large Août 2025}
+    \end{center}
+    \newpage
+
+    % =============================================== PAGE II ===================================================================
+
+    \begin{center}
+        UNIVERSIT\'E DON BOSCO DE LUBUMBASHI \\
+        Faculté des Sciences Informatiques \\
+        Département Réseaux\\
+        Lubumbashi \\
+        www.udbl.ac.cd \\
+    \end{center}
+
+    \begin{center}
+        \rule{\linewidth}{2pt}
+    \end{center}
+    % ++++++++++++++++++++++++++++++ LE LOGO + LE TITRE
+    \vspace{10pt}
+    \begin{center}
+        \includegraphics[scale=.6]{latex_page_garde/udbl.png}
+    \end{center}
+
+    \begin{center}
+        \rule{\linewidth}{1pt}
+    \end{center}
+    \begin{center}
+        \textbf{\large #1 \\
+        (\emph{cas de MMG et de l'ARPTC})
+        }
+    \end{center}
+    \begin{center}
+        \rule{\linewidth}{1pt}
+    \end{center}
+
+    \vspace{5pt}
+
+    \begin{FlushRight}
+        \emph{Travail présenté et défendu en vue de l’obtention \\ du grade d’ingénieur technicien en Informatique} \\
+        \vspace{5pt}
+        Présenté par : \textbf{#2} \\
+        Filière : \textbf{#5} \\
+        \vspace{5pt}
+        Directeur : \textbf{#3} \\
+        Co-directeur : \textbf{#4} \\
+    \end{FlushRight}
+    \vspace{5pt}
+    \begin{center}
+        \textbf{\large Août 2025}
+    \end{center}
+}
+\newpage
