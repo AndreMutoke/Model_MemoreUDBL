@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.2)  18 JAN 2026 08:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.7.2)  18 JAN 2026 08:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -940,15 +940,6 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 5.
 
 
-Package natbib Warning: Citation `LT5510' on page IV undefined on input line 17
-.
-
-
-Package natbib Warning: Citation `ad8317' on page IV undefined on input line 23
-.
-
-
-
 [4
 
 
@@ -1093,38 +1084,10 @@ e notre outil d'aide à l'homologation,
 Package acronym Info: Label `acro:LRU' newly defined as it shall be overridden
 although it is yet undefined on input line 13.
 
-Package natbib Warning: Citation `lru_mdel' on page 7 undefined on input line 2
-1.
-
-
-Package natbib Warning: Citation `lru_mdel' on page 7 undefined on input line 2
-6.
-
-
-Package natbib Warning: Citation `lru_mdel' on page 7 undefined on input line 3
-2.
-
-
-Package natbib Warning: Citation `lru_mdel' on page 7 undefined on input line 3
-6.
-
-
-Package natbib Warning: Citation `model_v' on page 7 undefined on input line 45
-.
-
-
 
 [7
 
 ]
-
-Package natbib Warning: Citation `model_based_definition' on page 8 undefined o
-n input line 53.
-
-
-Package natbib Warning: Citation `SysML' on page 8 undefined on input line 59.
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (13.0pt): 
@@ -1141,10 +1104,6 @@ n
 although it is yet undefined on input line 87.
 
 
-Package natbib Warning: Citation `SysML' on page 9 undefined on input line 97.
-
-
-
 
 Package fancyhdr Warning: \headheight is too small (13.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1153,10 +1112,6 @@ Package fancyhdr Warning: \headheight is too small (13.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
 
 [9]
-
-Package natbib Warning: Citation `travail_rdc' on page 10 undefined on input li
-ne 120.
-
 <mesDiagrammes/exigences/DiagrammeExigence.png, id=85, 1064.97874pt x 763.85374
 pt>
 File: mesDiagrammes/exigences/DiagrammeExigence.png Graphic file (type png)
@@ -1376,53 +1331,13 @@ re sys-tème d'aide à l'homologation
  []
 
 
-Package natbib Warning: Citation `iec6000' on page 24 undefined on input line 1
-9.
-
-
-Package natbib Warning: Citation `iec6000' on page 24 undefined on input line 2
-0.
-
-
-Package natbib Warning: Citation `iec6000' on page 24 undefined on input line 2
-3.
-
-
-Package natbib Warning: Citation `iec6000' on page 24 undefined on input line 2
-8.
-
-
-Package natbib Warning: Citation `absorbeurTSA' on page 24 undefined on input l
-ine 36.
-
-
 
 [24
 
 ]
-
-Package natbib Warning: Citation `iec6000' on page 25 undefined on input line 4
-2.
-
-
-Package natbib Warning: Citation `absorbeurTSA' on page 25 undefined on input l
-ine 49.
-
-
-Package natbib Warning: Citation `siepel_notitle_nodate' on page 25 undefined o
-n input line 53.
-
-
-Package natbib Warning: Citation `siepel_notitle_nodate' on page 25 undefined o
-n input line 58.
-
 Package acronym Info: Label `acro:HIRF' newly defined as it shall be overridden
 
 although it is yet undefined on input line 63.
-
-Package natbib Warning: Citation `siepel_notitle_nodate' on page 25 undefined o
-n input line 68.
-
 
 
 
@@ -1433,22 +1348,6 @@ Package fancyhdr Warning: \headheight is too small (13.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
 
 [25]
-
-Package natbib Warning: Citation `siepel_notitle_nodate' on page 26 undefined o
-n input line 75.
-
-
-Package natbib Warning: Citation `noauthor_specification_2017' on page 26 undef
-ined on input line 87.
-
-
-Package natbib Warning: Citation `noauthor_specification_2017' on page 26 undef
-ined on input line 92.
-
-
-Package natbib Warning: Citation `absorbeurTSA' on page 26 undefined on input l
-ine 101.
-
 <mesDiagrammes/img/pyramidAbsorberOrginal.png, id=144, 289.08pt x 216.81pt>
 File: mesDiagrammes/img/pyramidAbsorberOrginal.png Graphic file (type png)
 <use mesDiagrammes/img/pyramidAbsorberOrginal.png>
@@ -1484,15 +1383,6 @@ Package fancyhdr Warning: \headheight is too small (13.0pt):
 .enc} <./mesDiagrammes/img/pyramidAbsorberOrginal.png> <./mesDiagrammes/img/pyr
 amidISOsurface.png>]
 
-Package natbib Warning: Citation `absorbeurTSA' on page 28 undefined on input l
-ine 133.
-
-
-Package natbib Warning: Citation `absorbeurTSA' on page 28 undefined on input l
-ine 150.
-
-
-
 
 Package fancyhdr Warning: \headheight is too small (13.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1516,11 +1406,6 @@ line 187.
 (pdftex.def)             Requested size: 231.2643pt x 173.44823pt.
 Package acronym Info: Label `acro:VNA' newly defined as it shall be overridden
 although it is yet undefined on input line 192.
-
-
-Package natbib Warning: Citation `chetouani_developpement_nodate' on page 29 un
-defined on input line 197.
-
 
 
 
@@ -1559,10 +1444,6 @@ Package fancyhdr Warning: \headheight is too small (13.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
 
 [31 <./mesDiagrammes/MesureRF2.png>]
-
-Package natbib Warning: Citation `roodaki_lavasani_fard_radiation_2024' on page
- 32 undefined on input line 250.
-
 <mesDiagrammes/melangeurSignaux.png, id=177, 348.30125pt x 285.065pt>
 File: mesDiagrammes/melangeurSignaux.png Graphic file (type png)
 <use mesDiagrammes/melangeurSignaux.png>
@@ -1602,11 +1483,6 @@ File: mesDiagrammes/shemaLTC5510.png Graphic file (type png)
 Package pdftex.def Info: mesDiagrammes/shemaLTC5510.png  used on input line 313
 .
 (pdftex.def)             Requested size: 410.5871pt x 194.6788pt.
-
-
-Package natbib Warning: Citation `LT5510' on page 34 undefined on input line 31
-4.
-
 <mesDiagrammes/img/LTC5510.jpeg, id=190, 983.675pt x 822.07124pt>
 File: mesDiagrammes/img/LTC5510.jpeg Graphic file (type jpg)
 <use mesDiagrammes/img/LTC5510.jpeg>
@@ -1629,11 +1505,6 @@ File: mesDiagrammes/img/ADF4351.jpeg Graphic file (type jpg)
 Package pdftex.def Info: mesDiagrammes/img/ADF4351.jpeg  used on input line 340
 .
 (pdftex.def)             Requested size: 256.97505pt x 201.46443pt.
-
-
-Package natbib Warning: Citation `roodaki_lavasani_fard_radiation_2024' on page
- 35 undefined on input line 351.
-
 <mesDiagrammes/AmpliLog3.png, id=197, 778.91pt x 522.95375pt>
 File: mesDiagrammes/AmpliLog3.png Graphic file (type png)
 <use mesDiagrammes/AmpliLog3.png>
@@ -1681,20 +1552,12 @@ Package fancyhdr Warning: \headheight is too small (13.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
 
 [37]
-
-Package natbib Warning: Citation `ad8317' on page 38 undefined on input line 44
-9.
-
 <mesDiagrammes/img/ad8317_circuit.png, id=213, 505.89pt x 299.61937pt>
 File: mesDiagrammes/img/ad8317_circuit.png Graphic file (type png)
 <use mesDiagrammes/img/ad8317_circuit.png>
 Package pdftex.def Info: mesDiagrammes/img/ad8317_circuit.png  used on input li
 ne 453.
 (pdftex.def)             Requested size: 303.53633pt x 179.77301pt.
-
-Package natbib Warning: Citation `ad8317' on page 38 undefined on input line 45
-4.
-
 <mesDiagrammes/myHOMOLOG.png, id=214, 590.205pt x 878.53218pt>
 File: mesDiagrammes/myHOMOLOG.png Graphic file (type png)
 <use mesDiagrammes/myHOMOLOG.png>
@@ -1702,7 +1565,7 @@ Package pdftex.def Info: mesDiagrammes/myHOMOLOG.png  used on input line 463.
 (pdftex.def)             Requested size: 413.14067pt x 614.96834pt.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
 74.
-(C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+ (C:\Users\AndreMUTOKE\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1809,10 +1672,6 @@ Package fancyhdr Warning: \headheight is too small (13.0pt):
 
 [44]
 Chapter 4.
-
-Package natbib Warning: Citation `iec6000' on page 45 undefined on input line 1
-6.
-
 
 LaTeX Warning: File `CST_Studio/TestingAntenna/testTingAntenna/Export/hornAnten
 na.png' not found on input line 22.
@@ -2063,15 +1922,54 @@ Package fancyhdr Warning: \headheight is too small (13.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
 
-[58]
-No file main.bbl.
-<formulaire_demande_homologation.pdf, id=314, 597.50829pt x 845.0471pt>
+[58] (main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 34--38
+[]\T1/lmr/m/n/12 (+20) Renishaw Ap-ply in-no-va-tion.  Ex-pli-ca-tion de l'inte
+rférometrie.
+ []
+
+
+
+[59
+
+
+]
+Underfull \hbox (badness 3000) in paragraph at lines 99--102
+[]\T1/lmr/m/n/12 (+20) MMG Kin-se-vere.  Com-pany overview.  "https://www.mmg.c
+om/our-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--133
+[]\T1/lmr/m/n/12 (+20) PTC.  Déf-i-ni-tion basée sur le mod-èle.
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[60])
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.49998pt}.
+
+[61]
+<formulaire_demande_homologation.pdf, id=323, 597.50829pt x 845.0471pt>
 File: formulaire_demande_homologation.pdf Graphic file (type pdf)
 <use formulaire_demande_homologation.pdf>
 Package pdftex.def Info: formulaire_demande_homologation.pdf  used on input lin
 e 271.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<formulaire_demande_homologation.pdf, id=316, page=1, 597.50829pt x 845.0471pt>
+<formulaire_demande_homologation.pdf, id=325, page=1, 597.50829pt x 845.0471pt>
 
 File: formulaire_demande_homologation.pdf Graphic file (type pdf)
 <use formulaire_demande_homologation.pdf, page 1>
@@ -2085,8 +1983,7 @@ put line 271.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 
 
-[59
-
+[62
 
 ]
 File: formulaire_demande_homologation.pdf Graphic file (type pdf)
@@ -2106,81 +2003,81 @@ File: formulaire_demande_homologation.pdf Graphic file (type pdf)
 Package pdftex.def Info: formulaire_demande_homologation.pdf , page1 used on in
 put line 271.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-[60
-
- <./formulaire_demande_homologation.pdf>]
-<formulaire_demande_homologation.pdf, id=617, page=2, 597.50829pt x 845.0471pt>
-
-File: formulaire_demande_homologation.pdf Graphic file (type pdf)
-<use formulaire_demande_homologation.pdf, page 2>
-Package pdftex.def Info: formulaire_demande_homologation.pdf , page2 used on in
-put line 271.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: formulaire_demande_homologation.pdf Graphic file (type pdf)
-<use formulaire_demande_homologation.pdf, page 2>
-Package pdftex.def Info: formulaire_demande_homologation.pdf , page2 used on in
-put line 271.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-
-
-File: formulaire_demande_homologation.pdf Graphic file (type pdf)
-<use formulaire_demande_homologation.pdf, page 2>
-Package pdftex.def Info: formulaire_demande_homologation.pdf , page2 used on in
-put line 271.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-[61
-
- <./formulaire_demande_homologation.pdf>]
-<formulaire_demande_homologation.pdf, id=654, page=3, 597.50829pt x 845.0471pt>
-
-File: formulaire_demande_homologation.pdf Graphic file (type pdf)
-<use formulaire_demande_homologation.pdf, page 3>
-Package pdftex.def Info: formulaire_demande_homologation.pdf , page3 used on in
-put line 271.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: formulaire_demande_homologation.pdf Graphic file (type pdf)
-<use formulaire_demande_homologation.pdf, page 3>
-Package pdftex.def Info: formulaire_demande_homologation.pdf , page3 used on in
-put line 271.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-
-
-File: formulaire_demande_homologation.pdf Graphic file (type pdf)
-<use formulaire_demande_homologation.pdf, page 3>
-Package pdftex.def Info: formulaire_demande_homologation.pdf , page3 used on in
-put line 271.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-[62
-
- <./formulaire_demande_homologation.pdf>]
-<formulaire_demande_homologation.pdf, id=701, page=4, 597.50829pt x 845.0471pt>
-
-File: formulaire_demande_homologation.pdf Graphic file (type pdf)
-<use formulaire_demande_homologation.pdf, page 4>
-Package pdftex.def Info: formulaire_demande_homologation.pdf , page4 used on in
-put line 271.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: formulaire_demande_homologation.pdf Graphic file (type pdf)
-<use formulaire_demande_homologation.pdf, page 4>
-Package pdftex.def Info: formulaire_demande_homologation.pdf , page4 used on in
-put line 271.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-
-
-File: formulaire_demande_homologation.pdf Graphic file (type pdf)
-<use formulaire_demande_homologation.pdf, page 4>
-Package pdftex.def Info: formulaire_demande_homologation.pdf , page4 used on in
-put line 271.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 [63
 
  <./formulaire_demande_homologation.pdf>]
-<formulaire_client.pdf, id=726, 597.50829pt x 845.0471pt>
+<formulaire_demande_homologation.pdf, id=626, page=2, 597.50829pt x 845.0471pt>
+
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 2>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page2 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 2>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page2 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 2>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page2 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[64
+
+ <./formulaire_demande_homologation.pdf>]
+<formulaire_demande_homologation.pdf, id=664, page=3, 597.50829pt x 845.0471pt>
+
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 3>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page3 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 3>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page3 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 3>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page3 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[65
+
+ <./formulaire_demande_homologation.pdf>]
+<formulaire_demande_homologation.pdf, id=711, page=4, 597.50829pt x 845.0471pt>
+
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 4>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page4 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 4>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page4 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: formulaire_demande_homologation.pdf Graphic file (type pdf)
+<use formulaire_demande_homologation.pdf, page 4>
+Package pdftex.def Info: formulaire_demande_homologation.pdf , page4 used on in
+put line 271.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[66
+
+ <./formulaire_demande_homologation.pdf>]
+<formulaire_client.pdf, id=736, 597.50829pt x 845.0471pt>
 File: formulaire_client.pdf Graphic file (type pdf)
 <use formulaire_client.pdf>
 Package pdftex.def Info: formulaire_client.pdf  used on input line 273.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<formulaire_client.pdf, id=728, page=1, 597.50829pt x 845.0471pt>
+<formulaire_client.pdf, id=738, page=1, 597.50829pt x 845.0471pt>
 File: formulaire_client.pdf Graphic file (type pdf)
 <use formulaire_client.pdf, page 1>
 Package pdftex.def Info: formulaire_client.pdf , page1 used on input line 273.
@@ -2202,88 +2099,88 @@ Package pdftex.def Info: formulaire_client.pdf , page1 used on input line 273.
 File: formulaire_client.pdf Graphic file (type pdf)
 <use formulaire_client.pdf, page 1>
 Package pdftex.def Info: formulaire_client.pdf , page1 used on input line 273.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-[64
-
- <./formulaire_client.pdf>]
-<formulaire_client.pdf, id=774, page=2, 597.50829pt x 845.0471pt>
-File: formulaire_client.pdf Graphic file (type pdf)
-<use formulaire_client.pdf, page 2>
-Package pdftex.def Info: formulaire_client.pdf , page2 used on input line 273.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: formulaire_client.pdf Graphic file (type pdf)
-<use formulaire_client.pdf, page 2>
-Package pdftex.def Info: formulaire_client.pdf , page2 used on input line 273.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-
-
-File: formulaire_client.pdf Graphic file (type pdf)
-<use formulaire_client.pdf, page 2>
-Package pdftex.def Info: formulaire_client.pdf , page2 used on input line 273.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-[65
-
- <./formulaire_client.pdf>]
-<formulaire_client.pdf, id=790, page=3, 597.50829pt x 845.0471pt>
-File: formulaire_client.pdf Graphic file (type pdf)
-<use formulaire_client.pdf, page 3>
-Package pdftex.def Info: formulaire_client.pdf , page3 used on input line 273.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: formulaire_client.pdf Graphic file (type pdf)
-<use formulaire_client.pdf, page 3>
-Package pdftex.def Info: formulaire_client.pdf , page3 used on input line 273.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-
-
-File: formulaire_client.pdf Graphic file (type pdf)
-<use formulaire_client.pdf, page 3>
-Package pdftex.def Info: formulaire_client.pdf , page3 used on input line 273.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-[66
-
- <./formulaire_client.pdf>]
-<formulaire_client.pdf, id=800, page=4, 597.50829pt x 845.0471pt>
-File: formulaire_client.pdf Graphic file (type pdf)
-<use formulaire_client.pdf, page 4>
-Package pdftex.def Info: formulaire_client.pdf , page4 used on input line 273.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: formulaire_client.pdf Graphic file (type pdf)
-<use formulaire_client.pdf, page 4>
-Package pdftex.def Info: formulaire_client.pdf , page4 used on input line 273.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-
-
-File: formulaire_client.pdf Graphic file (type pdf)
-<use formulaire_client.pdf, page 4>
-Package pdftex.def Info: formulaire_client.pdf , page4 used on input line 273.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 [67
 
  <./formulaire_client.pdf>]
-<formulaire_client.pdf, id=804, page=5, 597.50829pt x 845.0471pt>
+<formulaire_client.pdf, id=783, page=2, 597.50829pt x 845.0471pt>
 File: formulaire_client.pdf Graphic file (type pdf)
-<use formulaire_client.pdf, page 5>
-Package pdftex.def Info: formulaire_client.pdf , page5 used on input line 273.
+<use formulaire_client.pdf, page 2>
+Package pdftex.def Info: formulaire_client.pdf , page2 used on input line 273.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: formulaire_client.pdf Graphic file (type pdf)
-<use formulaire_client.pdf, page 5>
-Package pdftex.def Info: formulaire_client.pdf , page5 used on input line 273.
+<use formulaire_client.pdf, page 2>
+Package pdftex.def Info: formulaire_client.pdf , page2 used on input line 273.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 
 
 File: formulaire_client.pdf Graphic file (type pdf)
-<use formulaire_client.pdf, page 5>
-Package pdftex.def Info: formulaire_client.pdf , page5 used on input line 273.
+<use formulaire_client.pdf, page 2>
+Package pdftex.def Info: formulaire_client.pdf , page2 used on input line 273.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 [68
 
  <./formulaire_client.pdf>]
-<formulaireInform.pdf, id=808, 597.50829pt x 845.0471pt>
+<formulaire_client.pdf, id=799, page=3, 597.50829pt x 845.0471pt>
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 3>
+Package pdftex.def Info: formulaire_client.pdf , page3 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 3>
+Package pdftex.def Info: formulaire_client.pdf , page3 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 3>
+Package pdftex.def Info: formulaire_client.pdf , page3 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[69
+
+ <./formulaire_client.pdf>]
+<formulaire_client.pdf, id=809, page=4, 597.50829pt x 845.0471pt>
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 4>
+Package pdftex.def Info: formulaire_client.pdf , page4 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 4>
+Package pdftex.def Info: formulaire_client.pdf , page4 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 4>
+Package pdftex.def Info: formulaire_client.pdf , page4 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[70
+
+ <./formulaire_client.pdf>]
+<formulaire_client.pdf, id=814, page=5, 597.50829pt x 845.0471pt>
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 5>
+Package pdftex.def Info: formulaire_client.pdf , page5 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 5>
+Package pdftex.def Info: formulaire_client.pdf , page5 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: formulaire_client.pdf Graphic file (type pdf)
+<use formulaire_client.pdf, page 5>
+Package pdftex.def Info: formulaire_client.pdf , page5 used on input line 273.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[71
+
+ <./formulaire_client.pdf>]
+<formulaireInform.pdf, id=818, 597.50829pt x 845.0471pt>
 File: formulaireInform.pdf Graphic file (type pdf)
 <use formulaireInform.pdf>
 Package pdftex.def Info: formulaireInform.pdf  used on input line 275.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<formulaireInform.pdf, id=810, page=1, 597.50829pt x 845.0471pt>
+<formulaireInform.pdf, id=820, page=1, 597.50829pt x 845.0471pt>
 File: formulaireInform.pdf Graphic file (type pdf)
 <use formulaireInform.pdf, page 1>
 Package pdftex.def Info: formulaireInform.pdf , page1 used on input line 275.
@@ -2306,10 +2203,10 @@ File: formulaireInform.pdf Graphic file (type pdf)
 <use formulaireInform.pdf, page 1>
 Package pdftex.def Info: formulaireInform.pdf , page1 used on input line 275.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-[69
+[72
 
  <./formulaireInform.pdf>]
-<formulaireInform.pdf, id=823, page=2, 597.50829pt x 845.0471pt>
+<formulaireInform.pdf, id=833, page=2, 597.50829pt x 845.0471pt>
 File: formulaireInform.pdf Graphic file (type pdf)
 <use formulaireInform.pdf, page 2>
 Package pdftex.def Info: formulaireInform.pdf , page2 used on input line 275.
@@ -2324,13 +2221,9 @@ File: formulaireInform.pdf Graphic file (type pdf)
 <use formulaireInform.pdf, page 2>
 Package pdftex.def Info: formulaireInform.pdf , page2 used on input line 275.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-[70
+[73
 
- <./formulaireInform.pdf>]
-
-Package natbib Warning: There were undefined citations.
-
-(main.aux)
+ <./formulaireInform.pdf>] (main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
@@ -2341,11 +2234,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 14889 strings out of 468221
- 261966 string characters out of 5429988
+ 15006 strings out of 468221
+ 264656 string characters out of 5429988
  935452 words of memory out of 5000000
- 42925 multiletter control sequences out of 15000+600000
- 678702 words of font info for 149 fonts, out of 8000000 for 9000
+ 43029 multiletter control sequences out of 15000+600000
+ 679292 words of font info for 154 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,17n,79p,1003b,1972s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/AndreMUTOKE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
@@ -2377,9 +2270,9 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/AndreMUTOKE
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/Andre
 MUTOKE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10
 .pfb>
-Output written on main.pdf (85 pages, 3030456 bytes).
+Output written on main.pdf (88 pages, 3042427 bytes).
 PDF statistics:
- 912 PDF objects out of 1000 (max. 8388607)
+ 921 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  27899 words of extra memory for PDF output out of 29859 (max. 10000000)
 

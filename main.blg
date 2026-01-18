@@ -1,0 +1,84 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: plain.bst
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+Database file #1: myBib.bib
+Warning--to sort, need author, editor, or key in noauthor_specification_2017
+Warning--to sort, need author or key in 705513
+Warning--to sort, need author, editor, or key in noauthor_specification_2017-1
+Warning--to sort, need author or key in noauthor_rspr100_nodate
+Warning--empty author in noauthor_rspr100_nodate
+Warning--empty journal in noauthor_rspr100_nodate
+Warning--empty year in noauthor_rspr100_nodate
+Warning--empty author in 705513
+Warning--empty author and editor in noauthor_specification_2017
+Warning--empty author and editor in noauthor_specification_2017-1
+Warning--empty journal in ahmed_destine_nodate
+Warning--empty year in ahmed_destine_nodate
+Warning--empty journal in bernuchon_optimisation_nodate
+Warning--empty year in bernuchon_optimisation_nodate
+Warning--empty journal in boudot_oscillateurs_nodate
+Warning--empty year in boudot_oscillateurs_nodate
+Warning--empty journal in chetouani_developpement_nodate
+Warning--empty year in chetouani_developpement_nodate
+Warning--empty journal in LT5510
+Warning--empty year in LT5510
+Warning--empty journal in ad8317
+Warning--empty year in ad8317
+Warning--empty journal in adf4351
+Warning--empty year in adf4351
+Warning--empty journal in dhia_propagation_nodate
+Warning--empty year in dhia_propagation_nodate
+Warning--empty journal in ferroux_moteurs_nodate
+Warning--empty year in ferroux_moteurs_nodate
+Warning--empty journal in af_cours_nodate
+Warning--empty year in af_cours_nodate
+Warning--empty journal in grenier_antennes_nodate
+Warning--empty year in grenier_antennes_nodate
+Warning--empty journal in nancy_gestion_2024
+Warning--empty title in siepel_notitle_nodate
+Warning--empty year in siepel_notitle_nodate
+You've used 33 entries,
+            2118 wiz_defined-function locations,
+            639 strings with 8419 characters,
+and the built_in function-call counts, 7380 in all, are:
+= -- 692
+> -- 267
+< -- 1
++ -- 113
+- -- 80
+* -- 427
+:= -- 1285
+add.period$ -- 84
+call.type$ -- 33
+change.case$ -- 138
+chr.to.int$ -- 0
+cite$ -- 68
+duplicate$ -- 323
+empty$ -- 645
+format.name$ -- 80
+if$ -- 1500
+int.to.chr$ -- 0
+int.to.str$ -- 33
+missing$ -- 25
+newline$ -- 153
+num.names$ -- 58
+pop$ -- 203
+preamble$ -- 1
+purify$ -- 106
+quote$ -- 0
+skip$ -- 225
+stack$ -- 0
+substring$ -- 249
+swap$ -- 23
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 128
+warning$ -- 35
+while$ -- 66
+width$ -- 35
+write$ -- 303
+(There were 35 warnings)
